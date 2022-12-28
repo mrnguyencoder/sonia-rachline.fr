@@ -1,61 +1,75 @@
 import React from 'react';
 import Logo from '../assets/logoSoniaRachline.png';
 import { Menu } from '@headlessui/react';
+import { FcAbout, FcBusinesswoman, FcMenu, FcNews, FcReadingEbook } from "react-icons/fc";
 
 function NavBar() {
   return (
-    <nav className='flex justify-between p-3'>
+    <nav className='flex justify-between p-3 shadow-sm'>
         <div className="">
             <img className='h-10' src={Logo} alt="Sonia Rachline" />
         </div>
-        <div className="hidden md:flex text-xl space-x-3">
+        <div className="hidden md:flex text-2xl space-x-3">
             <p className="">À Propos</p>
             <p className="">Articles</p>
             <p className="">Livres</p>
             <p className="">Contact</p>
         </div>
-{/* Menu right */}
-        <div className="text-4xl  flex justify-center items-center text-right">
+{/* Menu mobile */}
+        <div className="md:hidden text-3xl flex justify-center items-center text-right">
             <Menu as="div" className="relative inline-block" >
                 <Menu.Button className=""> 
-                    <BiUser className='text-slate-500'/>
+                    <FcMenu className='text-4xl'/>
                 </Menu.Button>     
-                <Menu.Items className="absolute space-y-4 text-slate-600 text-base p-4 text-left right-0 mt-3 w-72 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                    <div className="flex justify-between items-center text-xl">
-                        <FiUser className='text-3xl text-red-500'/>
+                <Menu.Items className="absolute space-y-4 text-slate-600 text-base p-4 right-0 mt-1 w-64 origin-top-right rounded-md bg-slate-50 shadow-lg ring-1 ring-opacity-5 focus:outline-none">
+                    <div className="flex items-center justify-center space-x-4 text-xl cursor-pointer hover:bg-slate-200">
+                        <FcAbout className='text-3xl'/>
                         <Menu.Item>
                         {({ active }) => (
                             <a
-                            className={`${active && 'bg-slate-200'}`}
+                            className={`${active && ''}`}
                             href="/"
                             >
-                            Connection Candidate
+                            À Propos
                             </a>
                         )}
                         </Menu.Item>
                     </div>
-                    <div className="flex justify-between items-center text-xl">
-                        <FaUserTie className='text-3xl text-blue-600'/>
+                    <div className="flex items-center justify-center space-x-4 text-xl cursor-pointer hover:bg-slate-200">
+                        <FcNews className='text-3xl '/>
                         <Menu.Item>
                         {({ active }) => (
                             <a
-                            className={`${active && 'bg-slate-200'}`}
+                            className={`${active && ''}`}
                             href="/"
                             >
-                            Connection entreprise
+                            Articles
                             </a>
                         )}
                         </Menu.Item>
                     </div>
-                    <div className="flex justify-between items-center text-xl">
-                        <HiOutlineUserGroup className='text-3xl text-lime-500'/>
+                    <div className="flex items-center justify-center space-x-4 text-xl cursor-pointer hover:bg-slate-200">
+                        <FcReadingEbook className='text-4xl '/>
                         <Menu.Item>
                         {({ active }) => (
                             <a
-                            className={`${active && 'bg-slate-200'}`}
+                            className={`${active && ''}`}
                             href="/"
                             >
-                            Particulier Employeur
+                            Livres
+                            </a>
+                        )}
+                        </Menu.Item>
+                    </div>
+                    <div className="flex items-center justify-center space-x-4 text-xl cursor-pointer hover:bg-slate-200">
+                        <FcBusinesswoman className='text-3xl'/>
+                        <Menu.Item>
+                        {({ active }) => (
+                            <a
+                            className={`${active && ''}`}
+                            href="/"
+                            >
+                            Contact
                             </a>
                         )}
                         </Menu.Item>
