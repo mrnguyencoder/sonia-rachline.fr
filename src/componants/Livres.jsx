@@ -4,7 +4,7 @@ function Livres() {
   return (
     <section id="livres">
         <div className="">
-            <h2 className=""></h2>
+            <h2 className="">Livres</h2>
         </div>
         <div className="">
 
