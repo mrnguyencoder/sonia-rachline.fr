@@ -7,7 +7,7 @@ import NavBar from './componants/NavBar';
 
 function App() {
   return (
-    <div >
+    <div className='bg-slate-800'>
       <NavBar />
       <Hero />
       <Livres />
