@@ -2,7 +2,7 @@ import React from 'react';
 import book1 from '../assets/book1.jpeg';
 
 
-const livre = [
+const livres = [
     {
       name: 'Claude Brouet Journaliste de mode',
       title: `Claude Brouet a consacré sa vie à la mode. Et la mode, elle, l'a depuis longtemps consacrée " grande Dame ", voire " papesse " de la profession. son parcours l'a conduite des salons Haute-Couture où travaillait sa mère, a directrice du style d'Hermès, puis à la direction mode des deux plus grands magazines féminins de l'après-guerre, et Marie-Claire.`,
@@ -25,8 +25,8 @@ function Livres() {
       
   return (
     <section id="livres" className='p-6 '>
-        <ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 text-slate-50">
-        { livre.map(() => (
+        <ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        { livres.map((livre) => (
          <li key={livre.name} className="col-span-1 divide-y divide-gray-200 rounded-lg bg-white shadow">
             <div className="flex w-full items-center justify-between space-x-6 p-6">
                 <div className="">
