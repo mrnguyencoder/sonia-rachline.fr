@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../assets/logoSoniaRachline.png';
+import Logo from '../assets/textsonia.png';
 import { Menu } from '@headlessui/react';
 import { FcAbout, FcBusinesswoman, FcMenu, FcNews, FcReadingEbook } from "react-icons/fc";
 
