@@ -60,7 +60,7 @@ function Livres(props) {
         <ul className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 p-6">
         {livreItems.map((item) => (
             <li key={item.name} className="text-slate-50">
-                <div className="flex justify-between shadow-lg m-3 border rounded-lg">
+                <div className="flex shadow-lg m-3 border rounded-lg bg-slate-700 hover:bg-slate-800">
                     <div className="p-8 space-y-3">
                         <p className="text-3xl">{item.name}</p>
                         <p className="text-zinc-300 italic text-right">{item.date}</p>
@@ -68,17 +68,19 @@ function Livres(props) {
                         <div className="flex justify-around pt-5">
                             <a href={item.detail} 
                                 rel='noreferrer' target="_blank"
-                                className="">
-                            <p className="text-slate-50 border px-6 py-2 rounded-full">Plus Info</p>
+                                className="bg-teal-600 rounded-full">
+                            <p className="text-slate-50 px-6 py-2 ">Plus Info</p>
                             </a>
                             <a href={item.buy} 
                                 rel='noreferrer' target="_blank"
-                                className="">
-                            <p className="text-slate-50 border px-6 py-2 rounded-full">Acheter</p>
+                                className="bg-[#ff9900] rounded-full ring-1 ring-slate-50 animate-pulse">
+                            <p className="text-slate-50  px-6 py-2 ">Acheter</p>
                             </a>
                         </div>
                     </div>
-                    <div className=""><img src={item.image} alt="" className='rounded-lg' /></div>
+                    <div className="mt-8 mr-2">
+                        <img src={item.image} alt="" className='rounded-lg' />
+                    </div>
                 </div>
                 
             </li>
