@@ -99,7 +99,7 @@ function Articles() {
                 <li key={date.id} className="text-slate-50 border rounded-2xl shadow-sm ">
                     <div className="flex items-center space-x-3 hover:bg-slate-700 hover:rounded-2xl">
                         <div className="flex">
-                            <div className="md:p-10 lg:p-20 space-y-3 ">
+                            <div className="p-6 md:p-10 lg:p-20 space-y-3 ">
                                 <p className="text-xl font-bold md:text-2xl lg:text-4xl">{date.name}</p>
                                 <p className="md:text-xl">{date.title}</p>
                                 <p className="italic text-right">{date.public}</p>
@@ -111,8 +111,8 @@ function Articles() {
                                     <p className="border px-6 py-1 rounded-full ring-1 bg-amber-300">{date.source}</p>
                                 </div>
                             </div>
-                            <div className="">
-                                <img src={date.image} alt="" className='rounded-lg mt-16 max-w-xs lg:max-w-lg' />
+                            <div className="mt-16">
+                                <img src={date.image} alt="" className='rounded-lg  max-w-xs lg:max-w-lg' />
                             </div>
                         </div>
                         

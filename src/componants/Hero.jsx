@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from '../assets/logoSoniaRachline.png';
+import { Player } from 'video-react';
 import partner1 from '../assets/p1.png';
 import partner2 from '../assets/p2.png';
 import partner3 from '../assets/p3.png';
@@ -23,6 +24,13 @@ function Hero() {
           </div>
         </div>
       </div>
+
+      <div className="flex justify-center">
+        <Player >
+          <source src="https://www.youtube.com/watch?v=Yk4gwtdeUr8" />
+        </Player>
+      </div>
+
       <div className="space-y-3">
         <p className="text-center text-xl uppercase text-slate-400 tracking-widest">Partners</p>
         <div className="flex justify-center h-12 md:h-18 w-screen text-slate-400 ">
