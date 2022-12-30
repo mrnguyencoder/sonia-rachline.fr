@@ -87,17 +87,17 @@ function Articles() {
   return (
     <section id="articles" className="h-full mx-4 md:mx-8 lg:mx-28" aria-label="articles">
         <div className="my-16 text-center">
-            <p className="text-4xl lg:text-6xl py-5 inline bg-gradient-to-r from-blue-700 via-slate-50 to-red-600 bg-clip-text font-display  tracking-tight text-transparent">Les articles actualités</p>
+            <p className="text-4xl lg:text-6xl inline bg-gradient-to-r from-blue-700 via-slate-50 to-red-600 bg-clip-text font-display  tracking-wider text-transparent">Les articles actualités</p>
         </div>
       {Object.keys(articles).map((year) => (
-        <div key={year} className="px-4 rounded-lg relative">
+        <div key={year} className="px-4 rounded-lg">
           <div className="px-6 py-1 text-slate-50">
             <p>Année: {year}</p>
           </div>
-          <ul role="list" className="relative z-0 divide-y divide-gray-200">
+          <ul role="list" className="">
             {articles[year].map((date) => (
               <li key={date.id} className="text-slate-50 border rounded-2xl shadow-sm">
-                <div className="relative flex items-center space-x-3 px-6 py-5 hover:bg-slate-700 hover:rounded-2xl">
+                <div className="flex items-center space-x-3 px-6 py-5 hover:bg-slate-700 hover:rounded-2xl">
                     <div className="flex">
                       <div className="p-4 md:p-10 lg:p-20 space-y-3 ">
                           <p className="text-xl font-bold md:text-3xl lg:text-5xl">{date.name}</p>

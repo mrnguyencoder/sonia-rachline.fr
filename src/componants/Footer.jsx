@@ -1,6 +1,8 @@
 import React from 'react';
 import { FiFacebook, FiLinkedin } from "react-icons/fi";
 import Logo from '../assets/logoSoniaRachline.png';
+import MentionsLegales from './MentionsLegales';
+import PolitiqueDeConfidentialite from './PolitiqueDeConfidentialite';
 
 
 function Footer() {
@@ -13,8 +15,12 @@ function Footer() {
           </div>
         </div>
         <div className="space-y-3">
-          <p className="">MENTIONS LÉGALES</p>
-          <p className="">POLITIQUE DE CONFIDENTIALITÉ</p>
+          <a href="#MentionsLegales" className="">
+            <MentionsLegales />
+          </a>
+          <a href="#PolitiqueDeConfidentialite" className="capitalize">
+            <PolitiqueDeConfidentialite />
+          </a>
         </div>
         <div className="text-xl flex flex-col space-y-3">
             <FiLinkedin className=''/>
