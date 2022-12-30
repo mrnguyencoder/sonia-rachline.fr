@@ -91,35 +91,35 @@ function Articles() {
         </div>
       {Object.keys(articles).map((year) => (
         <div key={year} className="px-4 rounded-lg">
-          <div className="px-6 py-1 text-slate-50">
-            <p>Année: {year}</p>
-          </div>
-          <ul role="list" className="flex flex-col gap-4">
+            <div className="px-6 py-1 text-slate-50">
+                <p>Année: {year}</p>
+            </div>
+            <ul role="list" className="flex flex-col gap-4">
             {articles[year].map((date) => (
-              <li key={date.id} className="text-slate-50 border rounded-2xl shadow-sm ">
-                <div className="flex items-center space-x-3 hover:bg-slate-700 hover:rounded-2xl">
-                    <div className="flex p-6 ">
-                      <div className="md:p-10 lg:p-20 space-y-3 ">
-                          <p className="text-xl font-bold md:text-2xl lg:text-4xl">{date.name}</p>
-                          <p className="md:text-xl">{date.title}</p>
-                          <p className="italic text-right">{date.public}</p>
-                          <div className="flex space-x-5 text-slate-700 font-bold">
-                            <a href={date.link} className=""
-                                rel='noreferrer' target="_blank">
-                                <p className="border px-6 py-1 rounded-full  bg-green-400">Lire</p>
-                            </a>
-                              <p className="border px-6 py-1 rounded-full ring-1 bg-amber-300">{date.source}</p>
-                          </div>
-                      </div>
-                      <div className="py-8">
-                        <img src={date.image} alt="" className='rounded-lg max-w-xs md:max-w-sm lg:max-w-lg' />
-                     </div>
+                <li key={date.id} className="text-slate-50 border rounded-2xl shadow-sm ">
+                    <div className="flex items-center space-x-3 hover:bg-slate-700 hover:rounded-2xl">
+                        <div className="flex">
+                            <div className="md:p-10 lg:p-20 space-y-3 ">
+                                <p className="text-xl font-bold md:text-2xl lg:text-4xl">{date.name}</p>
+                                <p className="md:text-xl">{date.title}</p>
+                                <p className="italic text-right">{date.public}</p>
+                                <div className="flex space-x-5 text-slate-700 font-bold">
+                                    <a href={date.link} className=""
+                                        rel='noreferrer' target="_blank">
+                                        <p className="border px-6 py-1 rounded-full  bg-green-400">Lire</p>
+                                    </a>
+                                    <p className="border px-6 py-1 rounded-full ring-1 bg-amber-300">{date.source}</p>
+                                </div>
+                            </div>
+                            <div className="">
+                                <img src={date.image} alt="" className='rounded-lg mt-16 max-w-xs lg:max-w-lg' />
+                            </div>
+                        </div>
+                        
                     </div>
-                    
-                </div>
-              </li>
+                </li>
             ))}
-          </ul>
+            </ul>
         </div>
       ))}
     </section>
