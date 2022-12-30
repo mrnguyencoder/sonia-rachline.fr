@@ -12,7 +12,7 @@ function Articles() {
         {
             id:1,
             name:`Show’s over for famed cabaret at Lido in Paris`,
-            source: `The Portland Press Herald`,
+            source: `Press Herald`,
             public: `28 mai 2022`,
             title:`“When the Lido reopened after World War II, people wanted to have fun. The Clerico brothers who bought the place wanted to make it a high-end venue. They invented the concept of dinner shows, which inspired other venues,” said Sonia Rachline, author of a book about the Lido.`,
             link: `https://www.pressherald.com/2022/05/28/shows-over-for-famed-cabaret-at-lido-in-paris/`,
@@ -21,7 +21,7 @@ function Articles() {
         {
             id:2,
             name:`Lido, Main jaune, Bus Palladium : derrière les fermetures, quel ...`,
-            source: `Radio France`,
+            source: `RadioFrance`,
             public: `11 août 2022`,
             title:`Sonia Rachline commence : "Je me limiterais à dire que c'est la fin d'un lieu de fête parisien. Le genre du cabaret n'est pas lié qu'au tourisme...`,
             link: `https://www.radiofrance.fr/franceculture/podcasts/le-temps-du-debat-d-ete/le-temps-du-debat-du-jeudi-11-aout-2022-4791526`,
@@ -38,7 +38,7 @@ function Articles() {
         },
         {
             id:4,
-            name:`«Comment faire un magazine de mode ?`,
+            name:`Comment faire un magazine de mode ?`,
             source: `L'Obs`,
             public: `27 Novembre 2022`,
             title:`« Claude Brouet, journaliste de mode », par Claude Brouet (avec Sonia Rachline), Editions du Regard. Cet article est réservé aux abonnés...`,
@@ -75,40 +75,46 @@ function Articles() {
     ],
     }
   return (
-    <section className="h-full overflow-y-auto" aria-label="Articles">
-      {Object.keys(articles).map((year) => (
-        <div key={year} className="relative">
-          <div className="sticky top-0 z-10 border-t border-b border-gray-200 bg-gray-50 px-6 py-1 text-sm font-medium text-gray-500">
-            <h3>{year}</h3>
-          </div>
-          <ul role="list" className="relative z-0 divide-y divide-gray-200">
-            {articles[year].map((date) => (
-              <li key={date.id} className="bg-white">
-                <div className="relative flex items-center space-x-3 px-6 py-5 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500 hover:bg-gray-50">
-                    <div className="flex">
-                      <div className="p-4 md:p-10 lg:p-20 space-y-3">
-                          <p className="text-xl font-bold md:text-3xl lg:text-5xl">{date.name}</p>
-                          <p className="md:text-xl lg:text-2xl">{date.title}</p>
-                          <div className="flex space-x-5">
-                              <p className="border px-4 rounded-full bg-amber-300">{date.source}</p>
-                              <p className="italic">{date.public}</p>
-                          </div>
-                            <a href={date.link} className="flex justify-center"
-                                rel='noreferrer' target="_blank">
-                                <p className="border px-6 py-1 rounded-full bg-green-400">Lire</p>
-                            </a>
-                      </div>
-                      <div className="">
-                        <img src={date.image} alt="" className='rounded-lg' />
-                     </div>
-                    </div>
-                    
-                </div>
-              </li>
-            ))}
-          </ul>
+    <section id="articles" className='' >
+        <div className="my-16 text-center">
+            <p className="py-5 inline bg-gradient-to-r from-blue-700 via-slate-50 to-red-600 bg-clip-text font-display text-3xl tracking-tight text-transparent">Les articles actualités</p>
         </div>
-      ))}
+      <nav className="h-full overflow-y-auto" aria-label="articles">
+          {Object.keys(articles).map((year) => (
+            <div key={year} className="px-4 rounded-lg relative">
+              <div className="sticky top-0 z-10 border-t border-b border-gray-200
+                    px-6 py-1 text-slate-50">
+                <p>Année: {year}</p>
+              </div>
+              <ul role="list" className="relative z-0 divide-y divide-gray-200">
+                {articles[year].map((date) => (
+                  <li key={date.id} className="text-slate-50 border rounded-2xl shadow-sm">
+                    <div className="relative flex items-center space-x-3 px-6 py-5 hover:bg-slate-700 hover:rounded-2xl">
+                        <div className="flex">
+                          <div className="p-4 md:p-10 lg:p-20 space-y-3 ">
+                              <p className="text-xl font-bold md:text-3xl lg:text-5xl">{date.name}</p>
+                              <p className="md:text-xl lg:text-2xl">{date.title}</p>
+                              <p className="italic text-right">{date.public}</p>
+                              <div className="flex space-x-5 text-slate-700 font-bold">
+                                <a href={date.link} className=""
+                                    rel='noreferrer' target="_blank">
+                                    <p className="border px-6 py-1 rounded-full  bg-green-400">Lire</p>
+                                </a>
+                                  <p className="border px-6 py-1 rounded-full ring-1 bg-amber-300">{date.source}</p>
+                              </div>
+                          </div>
+                          <div className="py-8">
+                            <img src={date.image} alt="" className='rounded-lg max-w-xs md:max-w-sm lg:max-w-lg' />
+                         </div>
+                        </div>
+          
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+      </nav>
     </section>
   )
 }

@@ -10,8 +10,8 @@ function App() {
     <div className='bg-slate-800'>
       <NavBar />
       <Hero />
-      <Livres />
       <Articles />
+      <Livres />
       <Footer />
     </div>
   );

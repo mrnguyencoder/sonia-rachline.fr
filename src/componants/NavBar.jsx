@@ -12,8 +12,9 @@ function NavBar() {
         </div>
         <div className="hidden md:flex text-xl space-x-3 text-slate-50">
             <p className="">À Propos</p>
-            <p className="">Articles</p>
-            <p className="">Livres</p>
+            <a href="#articles">Articles</a>
+            <a href="#livres ">Livres</a>
+            <p className=""></p>
             <p className="">Contact</p>
         </div>
 {/* Menu mobile */}
@@ -29,7 +30,7 @@ function NavBar() {
                         {({ active }) => (
                             <a
                             className={`${active && ''}`}
-                            href="/"
+                            href="#articles"
                             >
                             À Propos
                             </a>
@@ -42,7 +43,7 @@ function NavBar() {
                         {({ active }) => (
                             <a
                             className={`${active && ''}`}
-                            href="/"
+                            href="#articles"
                             >
                             Articles
                             </a>

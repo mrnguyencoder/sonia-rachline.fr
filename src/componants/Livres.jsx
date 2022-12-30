@@ -53,9 +53,9 @@ function Livres(props) {
         
       ];
   return (
-    <section id="livres" className='p-6 '>
-        <div className="">
-
+    <section id="livres" className='h-screen p-6 '>
+        <div className="my-16 text-center">
+            <p className="py-5 inline bg-gradient-to-r from-blue-700 via-slate-50 to-red-600 bg-clip-text font-display text-3xl tracking-tight text-transparent">Les Livres</p>
         </div>
         <ul className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {livreItems.map((item) => (
