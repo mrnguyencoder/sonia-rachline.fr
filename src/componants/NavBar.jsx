@@ -10,7 +10,7 @@ function NavBar() {
         <div className="">
             <img className='h-10 ' src={Logo} alt="Sonia Rachline" />
         </div>
-        <div className="hidden md:flex text-2xl space-x-3">
+        <div className="hidden md:flex text-xl space-x-3 text-slate-50">
             <p className="">À Propos</p>
             <p className="">Articles</p>
             <p className="">Livres</p>
