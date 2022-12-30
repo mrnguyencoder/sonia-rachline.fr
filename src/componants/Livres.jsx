@@ -53,11 +53,11 @@ function Livres(props) {
         
       ];
   return (
-    <section id="livres" className='h-screen p-6 '>
+    <section id="livres" className='h-screen'>
         <div className="my-16 text-center">
-            <p className="py-5 inline bg-gradient-to-r from-blue-700 via-slate-50 to-red-600 bg-clip-text font-display text-3xl tracking-tight text-transparent">Les Livres</p>
+            <p className="text-4xl lg:text-6xl inline bg-gradient-to-r from-blue-700 via-slate-50 to-red-600 bg-clip-text font-display tracking-tight text-transparent">Les Livres</p>
         </div>
-        <ul className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <ul className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 p-6">
         {livreItems.map((item) => (
             <li key={item.name} className="text-slate-50">
                 <div className="flex flex-col justify-between shadow-lg m-3 border rounded-lg">
@@ -78,7 +78,7 @@ function Livres(props) {
                             </a>
                         </div>
                     </div>
-                    <img src={item.image} alt="" className='rounded-lg h-86' />
+                    <img src={item.image} alt="" className='rounded-lg' />
                 </div>
                 
             </li>

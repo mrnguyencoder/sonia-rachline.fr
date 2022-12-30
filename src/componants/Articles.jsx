@@ -5,6 +5,7 @@ import img3 from '../assets/img3.png';
 import img4 from '../assets/img4.png';
 import img5 from '../assets/img5.png';
 import img6 from '../assets/img6.png';
+import img7 from '../assets/img7.png';
 
 function Articles() {
     const articles = {
@@ -45,6 +46,15 @@ function Articles() {
             link: `https://www.nouvelobs.com/editos-et-chroniques/20221127.OBS66444/comment-faire-un-magazine-de-mode.html`,
             image: img5,
         },
+        {
+            id:5,
+            name:`Au Lido, le rideau tombe sur soixante-quinze ans de plumes et de frous-frous`,
+            source: `Le Monde`,
+            public: `19 juin 2022 `,
+            title:`... de football y célébrera sa victoire, raconte le livre écrit par Sonia Rachline Lido, plumes, strass et émotions (Flammarion, 2021).`,
+            link: `https://www.lemonde.fr/economie/article/2022/06/18/au-lido-le-rideau-tombe-sur-soixante-quinze-ans-de-plumes-et-de-frous-frous_6130977_3234.html`,
+            image: img7,
+        },
     ],
         2021: [
         {
@@ -75,46 +85,43 @@ function Articles() {
     ],
     }
   return (
-    <section id="articles" className='' >
+    <section id="articles" className="h-full mx-4 md:mx-8 lg:mx-28" aria-label="articles">
         <div className="my-16 text-center">
-            <p className="py-5 inline bg-gradient-to-r from-blue-700 via-slate-50 to-red-600 bg-clip-text font-display text-3xl tracking-tight text-transparent">Les articles actualités</p>
+            <p className="text-4xl lg:text-6xl py-5 inline bg-gradient-to-r from-blue-700 via-slate-50 to-red-600 bg-clip-text font-display  tracking-tight text-transparent">Les articles actualités</p>
         </div>
-      <nav className="h-full overflow-y-auto" aria-label="articles">
-          {Object.keys(articles).map((year) => (
-            <div key={year} className="px-4 rounded-lg relative">
-              <div className="sticky top-0 z-10 border-t border-b border-gray-200
-                    px-6 py-1 text-slate-50">
-                <p>Année: {year}</p>
-              </div>
-              <ul role="list" className="relative z-0 divide-y divide-gray-200">
-                {articles[year].map((date) => (
-                  <li key={date.id} className="text-slate-50 border rounded-2xl shadow-sm">
-                    <div className="relative flex items-center space-x-3 px-6 py-5 hover:bg-slate-700 hover:rounded-2xl">
-                        <div className="flex">
-                          <div className="p-4 md:p-10 lg:p-20 space-y-3 ">
-                              <p className="text-xl font-bold md:text-3xl lg:text-5xl">{date.name}</p>
-                              <p className="md:text-xl lg:text-2xl">{date.title}</p>
-                              <p className="italic text-right">{date.public}</p>
-                              <div className="flex space-x-5 text-slate-700 font-bold">
-                                <a href={date.link} className=""
-                                    rel='noreferrer' target="_blank">
-                                    <p className="border px-6 py-1 rounded-full  bg-green-400">Lire</p>
-                                </a>
-                                  <p className="border px-6 py-1 rounded-full ring-1 bg-amber-300">{date.source}</p>
-                              </div>
+      {Object.keys(articles).map((year) => (
+        <div key={year} className="px-4 rounded-lg relative">
+          <div className="px-6 py-1 text-slate-50">
+            <p>Année: {year}</p>
+          </div>
+          <ul role="list" className="relative z-0 divide-y divide-gray-200">
+            {articles[year].map((date) => (
+              <li key={date.id} className="text-slate-50 border rounded-2xl shadow-sm">
+                <div className="relative flex items-center space-x-3 px-6 py-5 hover:bg-slate-700 hover:rounded-2xl">
+                    <div className="flex">
+                      <div className="p-4 md:p-10 lg:p-20 space-y-3 ">
+                          <p className="text-xl font-bold md:text-3xl lg:text-5xl">{date.name}</p>
+                          <p className="md:text-xl lg:text-2xl">{date.title}</p>
+                          <p className="italic text-right">{date.public}</p>
+                          <div className="flex space-x-5 text-slate-700 font-bold">
+                            <a href={date.link} className=""
+                                rel='noreferrer' target="_blank">
+                                <p className="border px-6 py-1 rounded-full  bg-green-400">Lire</p>
+                            </a>
+                              <p className="border px-6 py-1 rounded-full ring-1 bg-amber-300">{date.source}</p>
                           </div>
-                          <div className="py-8">
-                            <img src={date.image} alt="" className='rounded-lg max-w-xs md:max-w-sm lg:max-w-lg' />
-                         </div>
-                        </div>
-          
+                      </div>
+                      <div className="py-8">
+                        <img src={date.image} alt="" className='rounded-lg max-w-xs md:max-w-sm lg:max-w-lg' />
+                     </div>
                     </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-      </nav>
+                    
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
     </section>
   )
 }

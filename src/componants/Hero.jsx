@@ -8,7 +8,7 @@ import partner5 from '../assets/p5.png';
 
 function Hero() {
   return (
-    <section id="home" className='h-screen'>
+    <section id="hero" className='h-screen'>
       <div className="">
         <div className="md:flex justify-between items-center m-10 border rounded-2xl ">
           <div className="flex flex-col text-center p-10 space-y-3">

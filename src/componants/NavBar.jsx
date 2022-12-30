@@ -11,11 +11,10 @@ function NavBar() {
             <img className='h-10 ' src={Logo} alt="Sonia Rachline" />
         </div>
         <div className="hidden md:flex text-xl space-x-3 text-slate-50">
-            <p className="">À Propos</p>
+            <a href="#hero">À Propos</a>
             <a href="#articles">Articles</a>
-            <a href="#livres ">Livres</a>
-            <p className=""></p>
-            <p className="">Contact</p>
+            <a href="#livres">Livres</a>
+            <a href="#contact">Contact</a>
         </div>
 {/* Menu mobile */}
         <div className="md:hidden text-3xl flex justify-center items-center text-right">
@@ -30,7 +29,7 @@ function NavBar() {
                         {({ active }) => (
                             <a
                             className={`${active && ''}`}
-                            href="#articles"
+                            href="#hero"
                             >
                             À Propos
                             </a>
@@ -56,7 +55,7 @@ function NavBar() {
                         {({ active }) => (
                             <a
                             className={`${active && ''}`}
-                            href="/"
+                            href="#livres"
                             >
                             Livres
                             </a>
@@ -69,7 +68,7 @@ function NavBar() {
                         {({ active }) => (
                             <a
                             className={`${active && ''}`}
-                            href="/"
+                            href="#contact"
                             >
                             Contact
                             </a>
