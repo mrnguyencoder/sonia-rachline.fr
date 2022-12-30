@@ -13,7 +13,7 @@ function Articles() {
         {
             id:1,
             name:`Show’s over for famed cabaret at Lido in Paris`,
-            source: `Press Herald`,
+            source: `PressHerald`,
             public: `28 mai 2022`,
             title:`“When the Lido reopened after World War II, people wanted to have fun. The Clerico brothers who bought the place wanted to make it a high-end venue. They invented the concept of dinner shows, which inspired other venues,” said Sonia Rachline, author of a book about the Lido.`,
             link: `https://www.pressherald.com/2022/05/28/shows-over-for-famed-cabaret-at-lido-in-paris/`,
@@ -49,7 +49,7 @@ function Articles() {
         {
             id:5,
             name:`Au Lido, le rideau tombe sur soixante-quinze ans de plumes et de frous-frous`,
-            source: `Le Monde`,
+            source: `LeMonde`,
             public: `19 juin 2022 `,
             title:`... de football y célébrera sa victoire, raconte le livre écrit par Sonia Rachline Lido, plumes, strass et émotions (Flammarion, 2021).`,
             link: `https://www.lemonde.fr/economie/article/2022/06/18/au-lido-le-rideau-tombe-sur-soixante-quinze-ans-de-plumes-et-de-frous-frous_6130977_3234.html`,
@@ -94,14 +94,14 @@ function Articles() {
           <div className="px-6 py-1 text-slate-50">
             <p>Année: {year}</p>
           </div>
-          <ul role="list" className="">
+          <ul role="list" className="flex flex-col gap-4">
             {articles[year].map((date) => (
-              <li key={date.id} className="text-slate-50 border rounded-2xl shadow-sm">
-                <div className="flex items-center space-x-3 px-6 py-5 hover:bg-slate-700 hover:rounded-2xl">
-                    <div className="flex">
-                      <div className="p-4 md:p-10 lg:p-20 space-y-3 ">
-                          <p className="text-xl font-bold md:text-3xl lg:text-5xl">{date.name}</p>
-                          <p className="md:text-xl lg:text-2xl">{date.title}</p>
+              <li key={date.id} className="text-slate-50 border rounded-2xl shadow-sm ">
+                <div className="flex items-center space-x-3 hover:bg-slate-700 hover:rounded-2xl">
+                    <div className="flex p-6 ">
+                      <div className="md:p-10 lg:p-20 space-y-3 ">
+                          <p className="text-xl font-bold md:text-2xl lg:text-4xl">{date.name}</p>
+                          <p className="md:text-xl">{date.title}</p>
                           <p className="italic text-right">{date.public}</p>
                           <div className="flex space-x-5 text-slate-700 font-bold">
                             <a href={date.link} className=""
