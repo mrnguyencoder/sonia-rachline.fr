@@ -68,9 +68,6 @@ function Articles() {
         },
   
     ],
-        2020: [
-       
-    ],
         2019: [
         {
             id:1,
@@ -85,20 +82,19 @@ function Articles() {
     ],
     }
   return (
-    <section id="articles" className="h-full mx-4 md:mx-8 lg:mx-28" aria-label="articles">
+    <section id="articles" className="mx-1 md:mx-8 lg:mx-28" aria-label="articles">
         <div className="my-16 text-center">
             <p className="text-4xl lg:text-6xl inline bg-gradient-to-r from-blue-700 via-slate-50 to-red-600 bg-clip-text font-display  tracking-wider text-transparent">Les articles actualités</p>
         </div>
       {Object.keys(articles).map((year) => (
-        <div key={year} className="px-4 rounded-lg">
+        <div key={year} className="rounded-lg">
             <div className="px-6 py-1 text-slate-50">
                 <p>Année: {year}</p>
             </div>
-            <ul role="list" className="flex flex-col gap-4">
+            <ul className="flex flex-col gap-4">
             {articles[year].map((date) => (
-                <li key={date.id} className="text-slate-50 border rounded-2xl shadow-sm ">
-                    <div className="flex items-center space-x-3 hover:bg-slate-700 hover:rounded-2xl">
-                        <div className="flex">
+                <li key={date.id} className="flex text-slate-50 border rounded-2xl shadow-sm ">
+                        <div className=" items-center space-x-3 hover:bg-slate-700 hover:rounded-2xl">
                             <div className="p-6 md:p-10 lg:p-20 space-y-3 ">
                                 <p className="text-xl font-bold md:text-2xl lg:text-4xl">{date.name}</p>
                                 <p className="md:text-xl">{date.title}</p>
@@ -111,12 +107,11 @@ function Articles() {
                                     <p className="border px-6 py-1 rounded-full ring-1 bg-amber-300">{date.source}</p>
                                 </div>
                             </div>
-                            <div className="mt-16">
-                                <img src={date.image} alt="" className='rounded-lg  max-w-xs lg:max-w-lg' />
-                            </div>
+                            
                         </div>
-                        
-                    </div>
+                        <div className="">
+                            <img src={date.image} alt="" className=' max-w-xs lg:max-w-lg py-4 rounded-2xl pr-2' />
+                        </div>
                 </li>
             ))}
             </ul>

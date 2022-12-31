@@ -9,10 +9,10 @@ function Footer() {
       <div className="flex justify-between items-center p-8">
         <div className=''>
           <div>
-            <img src={Logo} alt="" className='h-20 hover:bg-slate-100' />
+            <img src={Logo} alt="" className='h-20 hover:bg-slate-100 rounded-xl' />
           </div>
         </div>
-        <div className="space-y-3 ">
+        <div className="md:flex gap-5">
           <p className='hover:text-green-700'>Mentions Légales </p>
           <p className='hover:text-yellow-500'>Politique De Confidentialité</p>
         </div>
