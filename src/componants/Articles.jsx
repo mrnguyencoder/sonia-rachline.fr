@@ -93,7 +93,7 @@ function Articles() {
             </div>
             <ul className="flex flex-col gap-4">
             {articles[year].map((date) => (
-                <li key={date.id} className="flex text-slate-50 border rounded-2xl shadow-sm ">
+                <li key={date.id} className="md:flex text-slate-50 border rounded-2xl shadow-sm ">
                         <div className=" items-center space-x-3 hover:bg-slate-700 hover:rounded-2xl">
                             <div className="p-6 md:p-10 lg:p-20 space-y-3 ">
                                 <p className="text-xl font-bold md:text-2xl lg:text-4xl">{date.name}</p>
