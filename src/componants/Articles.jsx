@@ -93,8 +93,8 @@ function Articles() {
             </div>
             <ul className="flex flex-col gap-4">
             {articles[year].map((date) => (
-                <li key={date.id} className="md:flex text-slate-50 border rounded-2xl shadow-sm ">
-                        <div className=" items-center space-x-3 hover:bg-slate-700 hover:rounded-2xl">
+                <li key={date.id} className="md:flex text-slate-50 border rounded-2xl shadow-sm">
+                        <div className="items-center space-x-3 hover:bg-slate-700 hover:rounded-2xl">
                             <div className="p-6 md:p-10 lg:p-20 space-y-3 ">
                                 <p className="text-xl font-bold md:text-2xl lg:text-4xl">{date.name}</p>
                                 <p className="md:text-xl">{date.title}</p>
@@ -109,8 +109,8 @@ function Articles() {
                             </div>
                             
                         </div>
-                        <div className="">
-                            <img src={date.image} alt="" className=' max-w-xs lg:max-w-lg py-4 rounded-2xl pr-2' />
+                        <div className="flex items-center justify-center">
+                            <img src={date.image} alt="" className=' items-center max-w-xs lg:max-w-lg md:py-4 rounded-2xl md:pr-2' />
                         </div>
                 </li>
             ))}

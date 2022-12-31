@@ -6,7 +6,7 @@ import Logo from '../assets/logoSoniaRachline.png';
 function Footer() {
   return (
     <footer className='flex flex-col bg-slate-900 text-white'>
-      <div className="flex justify-between items-center p-8">
+      <div className="flex justify-between items-center py-8 px-2">
         <div className=''>
           <div>
             <img src={Logo} alt="" className='h-20 hover:bg-slate-100 rounded-xl' />
@@ -28,15 +28,16 @@ function Footer() {
             </a>
           </div>
       </div>
-      <div className="text-center pb-6">
+      <div className="text-center pb-6 md:flex ">
         <div className="hover:text-slate-500">© 2022 Sonia Rachline | 
+        </div>
         <a
           href="https://nguyencoder.com/"
           rel='noreferrer' target="_blank"
-          className="text-slate-400 pl-3 hover:text-slate-50"
+          className="text-slate-400 hover:text-slate-50"
         >
           Developed by nguyencoder
-        </a></div>
+        </a>
         
       </div>
     </footer>
