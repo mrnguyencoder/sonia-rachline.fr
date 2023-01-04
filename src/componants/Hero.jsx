@@ -5,6 +5,8 @@ import partner2 from '../assets/p2.png';
 import partner3 from '../assets/p3.png';
 import partner4 from '../assets/p4.png';
 import partner5 from '../assets/p5.png';
+import partner6 from '../assets/p6.png';
+import partner7 from '../assets/p7.png';
 
 function Hero() {
   return (
@@ -36,6 +38,8 @@ function Hero() {
           <img src={partner2} alt="" className="" />
           <img src={partner4} alt="" className="" />
           <img src={partner5} alt="" className="" />
+          <img src={partner6} alt="" className="" />
+          <img src={partner7} alt="" className="" />
         </div>
       </div>
     </section>
