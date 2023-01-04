@@ -22,7 +22,7 @@ function Footer() {
               rel='noreferrer' target="_blank">
               <FiLinkedin className='text-[#0e76a8] hover:text-slate-50'/>
             </a>
-            <a href="https://www.facebook.com/sonia.david.92" className=""
+            <a href="https://www.facebook.com/" className=""
               rel='noreferrer' target="_blank">
               <FiFacebook className='text-[#3b5998] hover:text-slate-50'/>
             </a>
