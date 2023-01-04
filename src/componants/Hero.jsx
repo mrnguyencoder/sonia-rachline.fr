@@ -16,7 +16,7 @@ function Hero() {
               Sonia Rachline
             </h1>
             <p className="text-2xl px-3 md:3xl lg:4xl text-transparent bg-gradient-to-r from-yellow-200 via-green-400 to-lime-200 bg-clip-text tracking-wide ">Rédactrice journaliste, notamment pour 'Vogue' depuis 25 ans</p>
-            <p className="text-slate-100 text-xl lg:text-2xl tracking-widest">Écrivaine | Enseignante</p>
+            <p className="text-slate-100 text-xl lg:text-2xl tracking-widest">Auteure | Ghostwriter | Rédactrice</p>
           </div>
           <div className="px-16 md:p-26">
             <img src={Logo} alt="Sonia Rachline" className='' />
