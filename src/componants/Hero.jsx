@@ -6,9 +6,20 @@ import partner1 from '../assets/p1.png';
 import partner2 from '../assets/p2.png';
 import partner3 from '../assets/p3.png';
 import partner4 from '../assets/p4.png';
-import partner5 from '../assets/p5.png';
+import partner5 from '../assets/p5.jpeg';
 import partner6 from '../assets/p6.png';
 import partner7 from '../assets/p7.png';
+import partner8 from '../assets/p8.png';
+import partner9 from '../assets/p9.png';
+import partner10 from '../assets/p10.png';
+import partner11 from '../assets/p11.png';
+import partner12 from '../assets/p12.png';
+import partner13 from '../assets/p13.png';
+import partner14 from '../assets/p14.png';
+import partner15 from '../assets/p15.png';
+import partner16 from '../assets/p16.png';
+import partner17 from '../assets/p17.png';
+import partner18 from '../assets/p18.png';
 
 function Hero() {
   return (
@@ -114,7 +125,7 @@ function Hero() {
       <div className="space-y-3">
         <p className="my-4 text-center text-xl uppercase text-slate-400 tracking-widest">Collaboration</p>
         <div className="relative flex overflow-x-hidden">
-          <div className="flex animate-marquee whitespace-nowrap h-14">
+          <div className="flex animate-marquee h-14">
             <img src={partner1} alt="" className="" />
             <img src={partner3} alt="" className="" />
             <img src={partner2} alt="" className="" />
@@ -122,15 +133,37 @@ function Hero() {
             <img src={partner5} alt="" className="" />
             <img src={partner6} alt="" className="" />
             <img src={partner7} alt="" className="" />
+            <img src={partner8} alt="" className="" />
+            <img src={partner9} alt="" className="" />
+            <img src={partner10} alt="" className="" />
+            <img src={partner11} alt="" className="" />
+            <img src={partner12} alt="" className="" />
+            <img src={partner13} alt="" className="" />
+            <img src={partner14} alt="" className="" />
+            <img src={partner15} alt="" className="" />
+            <img src={partner16} alt="" className="" />
+            <img src={partner17} alt="" className="" />
+            <img src={partner18} alt="" className="" />
           </div>
-          <div className="flex absolute top-0 animate-marquee2 whitespace-nowrap h-14">
-            <img src={partner1} alt="" className="" />
+          <div className="flex absolute top-0 animate-marquee2 h-14">
+          <img src={partner1} alt="" className="" />
             <img src={partner3} alt="" className="" />
             <img src={partner2} alt="" className="" />
             <img src={partner4} alt="" className="" />
             <img src={partner5} alt="" className="" />
             <img src={partner6} alt="" className="" />
             <img src={partner7} alt="" className="" />
+            <img src={partner8} alt="" className="" />
+            <img src={partner9} alt="" className="" />
+            <img src={partner10} alt="" className="" />
+            <img src={partner11} alt="" className="" />
+            <img src={partner12} alt="" className="" />
+            <img src={partner13} alt="" className="" />
+            <img src={partner14} alt="" className="" />
+            <img src={partner15} alt="" className="" />
+            <img src={partner16} alt="" className="" />
+            <img src={partner17} alt="" className="" />
+            <img src={partner18} alt="" className="" />
           </div>
         </div>
       </div>
