@@ -13,7 +13,7 @@ function NavBar() {
         <div className="hidden md:flex items-center text-xl space-x-5 text-slate-50 pr-4 ">
             <a className="hover:text-green-600" href="#hero">À Propos</a>
             <a className="hover:text-green-500" href="#articles">Articles</a>
-            <a className="hover:text-green-400" href="#livres">Livres</a>
+            <a className="hover:text-green-400" href="#Publications">Publications</a>
             <a className="hover:text-green-300" href="#contact">Contact</a>
         </div>
 {/* Menu mobile */}
@@ -55,9 +55,9 @@ function NavBar() {
                         {({ active }) => (
                             <a
                             className={`${active && ''}`}
-                            href="#livres"
+                            href="#Publications"
                             >
-                            Livres
+                            Publications
                             </a>
                         )}
                         </Menu.Item>

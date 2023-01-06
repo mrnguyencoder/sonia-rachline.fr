@@ -2,7 +2,7 @@ import './App.css';
 import Articles from './componants/Articles';
 import Footer from './componants/Footer';
 import Hero from './componants/Hero';
-import Livres from './componants/Livres';
+import Publications from './componants/Publications';
 import NavBar from './componants/NavBar';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <NavBar />
       <Hero />
       <Articles />
-      <Livres />
+      <Publications />
       <Footer />
 
     </div>

@@ -6,7 +6,7 @@ import book6 from '../assets/book6.webp';
 import book7 from '../assets/book7.jpg';
 
 
-function Livres(props) {
+function Publications(props) {
     const livreItems = [
         {
           name: 'Claude Brouet Journaliste de mode',
@@ -53,9 +53,9 @@ function Livres(props) {
         
       ];
   return (
-    <section id="livres" className=''>
+    <section id="Publications" className=''>
         <div className="my-16 text-center">
-            <p className="text-4xl lg:text-6xl inline bg-gradient-to-r from-blue-700 via-slate-50 to-red-600 bg-clip-text font-display tracking-wider text-transparent">Les Livres</p>
+            <p className="text-4xl lg:text-6xl inline bg-gradient-to-r from-blue-700 via-slate-50 to-red-600 bg-clip-text font-display tracking-wider text-transparent">Les Publications</p>
         </div>
         <ul className="grid gap-6 md:gap-10 lg:gap-20  md:grid-cols-2 lg:grid-cols-3 md:p-6">
         {livreItems.map((item) => (
@@ -91,4 +91,4 @@ function Livres(props) {
   )
 }
 
-export default Livres;
+export default Publications;
