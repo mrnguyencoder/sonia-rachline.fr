@@ -8,10 +8,8 @@ import img6 from '../assets/img6.png';
 import img7 from '../assets/img7.png';
 
 function Articles() {
-    const articles = {
-        2022: [
+    const articles = [
         {
-            id:1,
             name:`Show’s over for famed cabaret at Lido in Paris`,
             source: `PressHerald`,
             public: `28 mai 2022`,
@@ -20,7 +18,6 @@ function Articles() {
             image: img1,
         },
         {
-            id:2,
             name:`Lido, Main jaune, Bus Palladium : derrière les fermetures, quel ...`,
             source: `RadioFrance`,
             public: `11 août 2022`,
@@ -29,7 +26,6 @@ function Articles() {
             image: img3,
         },
         {
-            id:3,
             name:`«J’étais seins nus, bien sûr» : à Paris, le Lido tire le rideau sur une épopée de 76 ans`,
             source: `Le Parisien`,
             public: `29 Juil 2022`,
@@ -38,7 +34,6 @@ function Articles() {
             image: img4,
         },
         {
-            id:4,
             name:`Comment faire un magazine de mode ?`,
             source: `L'Obs`,
             public: `27 Novembre 2022`,
@@ -47,7 +42,6 @@ function Articles() {
             image: img5,
         },
         {
-            id:5,
             name:`Au Lido, le rideau tombe sur soixante-quinze ans de plumes et de frous-frous`,
             source: `LeMonde`,
             public: `19 juin 2022 `,
@@ -55,10 +49,7 @@ function Articles() {
             link: `https://www.lemonde.fr/economie/article/2022/06/18/au-lido-le-rideau-tombe-sur-soixante-quinze-ans-de-plumes-et-de-frous-frous_6130977_3234.html`,
             image: img7,
         },
-    ],
-        2021: [
         {
-            id:1,
             name:`Les plus belles expositions à voir en France cet été`,
             source: `Vogue`,
             public: `28 juillet 2021`,
@@ -67,10 +58,7 @@ function Articles() {
             image: img6,
         },
   
-    ],
-        2019: [
         {
-            id:1,
             name:`Peter Lindbergh s'est éteint. Retour sur l'interview sans filtre qu'il accordait à Vogue Hommes en 2016`,
             source: `Vogue`,
             public: `04 Septembre 2019`,
@@ -79,44 +67,35 @@ function Articles() {
             image: img2,
         },
        
-    ],
-    }
+    ]
   return (
     <section id="articles" className="mx-1 md:mx-8 lg:mx-28" aria-label="articles">
         <div className="my-16 text-center">
             <p className="text-4xl lg:text-6xl inline bg-gradient-to-r from-blue-700 via-slate-50 to-red-600 bg-clip-text font-display  tracking-wider text-transparent">Les articles actualités</p>
         </div>
-      {Object.keys(articles).map((year) => (
-        <div key={year} className="rounded-lg">
-            <div className="px-6 py-1 text-slate-50">
-                <p>Année: {year}</p>
-            </div>
-            <ul className="flex flex-col gap-4">
-            {articles[year].map((date) => (
-                <li key={date.id} className="md:flex text-slate-50 border rounded-2xl shadow-sm">
-                        <div className="items-center space-x-3 hover:bg-slate-700 hover:rounded-2xl">
-                            <div className="p-6 md:p-10 lg:p-20 space-y-3 ">
-                                <p className="text-xl font-bold md:text-2xl lg:text-4xl">{date.name}</p>
-                                <p className="md:text-xl">{date.title}</p>
-                                <p className="italic text-right">{date.public}</p>
-                                <div className="flex space-x-5 text-slate-700 font-bold">
-                                    <a href={date.link} className=""
-                                        rel='noreferrer' target="_blank">
-                                        <p className="border px-6 py-1 rounded-full  bg-green-400">Lire</p>
-                                    </a>
-                                    <p className="border px-6 py-1 rounded-full ring-1 bg-amber-300">{date.source}</p>
-                                </div>
-                            </div>
+
+        {articles.map((date) => (
+            <div key={date.name} className="md:flex text-slate-50 border rounded-2xl shadow-sm ">
+                <div className="items-center space-x-3 hover:bg-slate-700 hover:rounded-2xl">
+                    <div className="p-6 md:p-10 lg:p-20 space-y-3 ">
+                        <p className="text-xl font-bold md:text-2xl lg:text-4xl">{date.name}</p>
+                        <p className="md:text-xl">{date.title}</p>
+                        <p className="italic text-right">{date.public}</p>
+                        <div className="flex space-x-5 text-slate-700 font-bold">
+                            <a href={date.link} className=""
+                                rel='noreferrer' target="_blank">
+                                <p className="border px-6 py-1 rounded-full  bg-green-400">Lire</p>
+                            </a>
+                            <p className="border px-6 py-1 rounded-full ring-1 bg-amber-300">{date.source}</p>
+                        </div>
+                    </div>
                             
-                        </div>
-                        <div className="flex items-center justify-center">
-                            <img src={date.image} alt="" className=' items-center max-w-xs lg:max-w-lg md:py-4 rounded-2xl md:pr-2' />
-                        </div>
-                </li>
-            ))}
-            </ul>
-        </div>
-      ))}
+                </div>
+                <div className="flex items-center justify-center">
+                    <img src={date.image} alt="" className=' items-center max-w-xs lg:max-w-lg md:py-4 rounded-2xl md:pr-2' />
+                </div>
+            </div>
+        ))}
     </section>
   )
 }
