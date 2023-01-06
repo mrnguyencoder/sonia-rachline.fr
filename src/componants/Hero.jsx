@@ -31,15 +31,26 @@ function Hero() {
       </div>
 
       <div className="space-y-3">
-        <p className="my-4 text-center text-xl uppercase text-slate-400 tracking-widest">Partners</p>
-        <div className="flex justify-center h-12 md:h-18 max-w-screen text-slate-400 overflow-x-hidden">
-          <img src={partner1} alt="" className="" />
-          <img src={partner3} alt="" className="" />
-          <img src={partner2} alt="" className="" />
-          <img src={partner4} alt="" className="" />
-          <img src={partner5} alt="" className="" />
-          <img src={partner6} alt="" className="" />
-          <img src={partner7} alt="" className="" />
+        <p className="my-4 text-center text-xl uppercase text-slate-400 tracking-widest">Collaboration</p>
+        <div className="relative flex overflow-x-hidden">
+          <div className="flex animate-marquee whitespace-nowrap h-14">
+            <img src={partner1} alt="" className="" />
+            <img src={partner3} alt="" className="" />
+            <img src={partner2} alt="" className="" />
+            <img src={partner4} alt="" className="" />
+            <img src={partner5} alt="" className="" />
+            <img src={partner6} alt="" className="" />
+            <img src={partner7} alt="" className="" />
+          </div>
+          <div className="flex absolute top-0 animate-marquee2 whitespace-nowrap h-14">
+            <img src={partner1} alt="" className="" />
+            <img src={partner3} alt="" className="" />
+            <img src={partner2} alt="" className="" />
+            <img src={partner4} alt="" className="" />
+            <img src={partner5} alt="" className="" />
+            <img src={partner6} alt="" className="" />
+            <img src={partner7} alt="" className="" />
+          </div>
         </div>
       </div>
     </section>
