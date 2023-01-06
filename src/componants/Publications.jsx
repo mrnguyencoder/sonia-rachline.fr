@@ -57,6 +57,34 @@ function Publications(props) {
         <div className="my-16 text-center">
             <p className="text-4xl lg:text-6xl inline bg-gradient-to-r from-blue-700 via-slate-50 to-red-600 bg-clip-text font-display tracking-wider text-transparent">Les Publications</p>
         </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-cyan-600 border-y-2 text-slate-100">
+          <div className="border p-4 rounded-md m-2 hover:bg-cyan-700 space-y-2 ">
+            <h2 className="text-lg text-center text-blue-800">ROMANS - PSEUDONYME SONIA DAVID</h2>
+            <p className="">1, L’invention de la Vérité (écriture en cours - Lauréate d’une bourse du CNL)</p>
+            <p className="">2, David Bowie n’est pas mort, Robert Laffont, 2017</p>
+            <p className="">3, Les petits succès sont un désastre, Robert Laffont, 2012</p>
+          </div>
+          <div className="border p-4 rounded-md m-2 hover:bg-cyan-700 space-y-2 ">
+            <h2 className="text-lg text-center text-blue-800">GHOSTWRITING</h2>
+            <p className="">1,Mélancolique Rodéo - Jean Michel Jarre, Robert Laffont 2019</p>
+          </div>
+          <div className="border p-4 rounded-md m-2 hover:bg-cyan-700 space-y-2 ">
+            <h2 className="text-lg text-center text-blue-800">DIVERS</h2>
+            <p className="">1, Claude Brouet, Journaliste de mode, éditions du Regard, 2022</p>
+            <p className="">2, Lido, Plumes stass et Emotions, Flammarion 2021</p>
+            <p className="">3, Karl Lagerfeld de A à Z, Gallimard, 2019</p>
+            <p className="">4, C’est le Printemps la Martinière, 2015</p>
+            <p className="">5, Vogue Covers, Ramsay, 2015</p>
+            <p className="">6, Vogue à la Mer, Ramsay, 2008</p>
+            <p className="">7, Le Monde de –M-, Le Seuil, 2005</p>
+          </div>
+          <div className="border p-4 rounded-md m-2 hover:bg-cyan-700 space-y-2 ">
+            <h2 className="text-lg text-center text-blue-800">COLLABORATIONS</h2>
+            <p className="">1, Marithé+François Girbaud, La Martinière, 2012</p>
+            <p className="">2, Maison Martin Margiela, éditions Rizzoli, 2009</p>
+            <p className="">3, Vingt ans de système de mode, éditions IFM-Regard? 2008</p>
+          </div>
+        </div>
         <ul className="grid gap-6 md:gap-10 lg:gap-20  md:grid-cols-2 lg:grid-cols-3 md:p-6">
         {livreItems.map((item) => (
             <li key={item.name} className="text-slate-50">
