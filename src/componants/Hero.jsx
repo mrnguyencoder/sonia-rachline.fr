@@ -13,7 +13,6 @@ import partner8 from '../assets/p8.png';
 import partner9 from '../assets/p9.png';
 import partner10 from '../assets/p10.png';
 import partner11 from '../assets/p11.png';
-import partner12 from '../assets/p12.png';
 import partner13 from '../assets/p13.png';
 import partner14 from '../assets/p14.png';
 import partner15 from '../assets/p15.png';
@@ -137,7 +136,6 @@ function Hero() {
             <img src={partner9} alt="" className="" />
             <img src={partner10} alt="" className="" />
             <img src={partner11} alt="" className="" />
-            <img src={partner12} alt="" className="" />
             <img src={partner13} alt="" className="" />
             <img src={partner14} alt="" className="" />
             <img src={partner15} alt="" className="" />
@@ -157,7 +155,6 @@ function Hero() {
             <img src={partner9} alt="" className="" />
             <img src={partner10} alt="" className="" />
             <img src={partner11} alt="" className="" />
-            <img src={partner12} alt="" className="" />
             <img src={partner13} alt="" className="" />
             <img src={partner14} alt="" className="" />
             <img src={partner15} alt="" className="" />
