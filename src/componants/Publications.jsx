@@ -85,7 +85,7 @@ function Publications(props) {
             <p className="">3, Vingt ans de système de mode, éditions IFM-Regard? 2008</p>
           </div>
         </div>
-        <ul className="grid gap-6 md:gap-10 lg:gap-20  md:grid-cols-2 lg:grid-cols-3 md:p-6">
+        {/* <ul className="grid gap-6 md:gap-10 lg:gap-20  md:grid-cols-2 lg:grid-cols-3 md:p-6">
         {livreItems.map((item) => (
             <li key={item.name} className="text-slate-50">
                 <div className="flex shadow-lg border rounded-lg bg-slate-700 hover:bg-slate-800">
@@ -114,7 +114,7 @@ function Publications(props) {
             </li>
          
         ))}
-        </ul>
+        </ul> */}
     </section>
   )
 }
