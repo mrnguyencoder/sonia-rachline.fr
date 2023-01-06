@@ -5,7 +5,7 @@ import Logo from '../assets/logoSoniaRachline.png';
 
 function Footer() {
   return (
-    <footer className='flex flex-col bg-slate-900 text-white'>
+    <footer className='flex flex-col bg-slate-900 text-white p-3'>
       <div className="flex justify-between items-center py-8 px-2">
         <div className=''>
           <div>
