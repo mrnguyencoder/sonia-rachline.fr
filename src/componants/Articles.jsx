@@ -10,12 +10,12 @@ import img7 from '../assets/img7.png';
 function Articles() {
     const articles = [
         {
-            name:`Show’s over for famed cabaret at Lido in Paris`,
-            source: `PressHerald`,
-            public: `28 mai 2022`,
-            title:`“When the Lido reopened after World War II, people wanted to have fun. The Clerico brothers who bought the place wanted to make it a high-end venue. They invented the concept of dinner shows, which inspired other venues,” said Sonia Rachline, author of a book about the Lido.`,
-            link: `https://www.pressherald.com/2022/05/28/shows-over-for-famed-cabaret-at-lido-in-paris/`,
-            image: img1,
+            name:`Comment faire un magazine de mode ?`,
+            source: `L'Obs`,
+            public: `27 Novembre 2022`,
+            title:`« Claude Brouet, journaliste de mode », par Claude Brouet (avec Sonia Rachline), Editions du Regard. Cet article est réservé aux abonnés...`,
+            link: `https://www.nouvelobs.com/editos-et-chroniques/20221127.OBS66444/comment-faire-un-magazine-de-mode.html`,
+            image: img5,
         },
         {
             name:`Lido, Main jaune, Bus Palladium : derrière les fermetures, quel ...`,
@@ -28,18 +28,10 @@ function Articles() {
         {
             name:`«J’étais seins nus, bien sûr» : à Paris, le Lido tire le rideau sur une épopée de 76 ans`,
             source: `Le Parisien`,
-            public: `29 Juil 2022`,
+            public: `29 juil 2022`,
             title:`Les filles dansent en talons hauts, rappelle Sonia Rachline. On peut faire un musée avec les costumes du Lido. Un string du Lido n'a rien à...`,
             link: `https://www.leparisien.fr/paris-75/jetais-seins-nus-bien-sur-a-paris-le-lido-tire-le-rideau-sur-une-epopee-de-76-ans-29-07-2022-YYVNMKGS3RAEZFS5NGBDS37ZFU.php`,
             image: img4,
-        },
-        {
-            name:`Comment faire un magazine de mode ?`,
-            source: `L'Obs`,
-            public: `27 Novembre 2022`,
-            title:`« Claude Brouet, journaliste de mode », par Claude Brouet (avec Sonia Rachline), Editions du Regard. Cet article est réservé aux abonnés...`,
-            link: `https://www.nouvelobs.com/editos-et-chroniques/20221127.OBS66444/comment-faire-un-magazine-de-mode.html`,
-            image: img5,
         },
         {
             name:`Au Lido, le rideau tombe sur soixante-quinze ans de plumes et de frous-frous`,
@@ -48,6 +40,14 @@ function Articles() {
             title:`... de football y célébrera sa victoire, raconte le livre écrit par Sonia Rachline Lido, plumes, strass et émotions (Flammarion, 2021).`,
             link: `https://www.lemonde.fr/economie/article/2022/06/18/au-lido-le-rideau-tombe-sur-soixante-quinze-ans-de-plumes-et-de-frous-frous_6130977_3234.html`,
             image: img7,
+        },
+        {
+            name:`Show’s over for famed cabaret at Lido in Paris`,
+            source: `PressHerald`,
+            public: `28 mai 2022`,
+            title:`“When the Lido reopened after World War II, people wanted to have fun. The Clerico brothers who bought the place wanted to make it a high-end venue. They invented the concept of dinner shows, which inspired other venues,” said Sonia Rachline, author of a book about the Lido.`,
+            link: `https://www.pressherald.com/2022/05/28/shows-over-for-famed-cabaret-at-lido-in-paris/`,
+            image: img1,
         },
         {
             name:`Les plus belles expositions à voir en France cet été`,
@@ -74,28 +74,30 @@ function Articles() {
             <p className="text-4xl lg:text-6xl inline bg-gradient-to-r from-blue-700 via-slate-50 to-red-600 bg-clip-text font-display  tracking-wider text-transparent">Les articles actualités</p>
         </div>
 
-        {articles.map((date) => (
-            <div key={date.name} className="md:flex text-slate-50 border rounded-2xl shadow-sm ">
-                <div className="items-center space-x-3 hover:bg-slate-700 hover:rounded-2xl">
-                    <div className="p-6 md:p-10 lg:p-20 space-y-3 ">
-                        <p className="text-xl font-bold md:text-2xl lg:text-4xl">{date.name}</p>
-                        <p className="md:text-xl">{date.title}</p>
-                        <p className="italic text-right">{date.public}</p>
-                        <div className="flex space-x-5 text-slate-700 font-bold">
-                            <a href={date.link} className=""
-                                rel='noreferrer' target="_blank">
-                                <p className="border px-6 py-1 rounded-full  bg-green-400">Lire</p>
-                            </a>
-                            <p className="border px-6 py-1 rounded-full ring-1 bg-amber-300">{date.source}</p>
+        <ul className="grid gap-6 m-2">
+            {articles.map((item) => (
+                <li key={item.name} className="md:flex text-slate-50 border rounded-2xl shadow-sm hover:bg-slate-700 hover:rounded-2xl">
+                    <div className="">
+                        <div className="p-6 md:p-10 lg:p-20 space-y-3 ">
+                            <p className="text-xl font-bold md:text-2xl lg:text-4xl">{item.name}</p>
+                            <p className="md:text-xl">{item.title}</p>
+                            <p className="italic text-right">{item.public}</p>
+                            <div className="flex space-x-5 text-slate-700 font-bold">
+                                <a href={item.link} className=""
+                                    rel='noreferrer' target="_blank">
+                                    <p className="border px-6 py-1 rounded-full  bg-green-400">Lire</p>
+                                </a>
+                                <p className="border px-6 py-1 rounded-full ring-1 bg-amber-300">{item.source}</p>
+                            </div>
                         </div>
+            
                     </div>
-                            
-                </div>
-                <div className="flex items-center justify-center">
-                    <img src={date.image} alt="" className=' items-center max-w-xs lg:max-w-lg md:py-4 rounded-2xl md:pr-2' />
-                </div>
-            </div>
-        ))}
+                    <div className="p-3 flex justify-center">
+                        <img src={item.image} alt="" className='max-w-xs lg:max-w-lg rounded-2xl' />
+                    </div>
+                </li>
+            ))}
+        </ul>
     </section>
   )
 }
