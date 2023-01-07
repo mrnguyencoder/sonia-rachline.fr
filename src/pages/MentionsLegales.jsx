@@ -2,7 +2,7 @@ import React from 'react'
 
 function MentionsLegales() {
   return (
-    <div>MentionsLegales</div>
+    <div id="mentionslegales">MentionsLegales</div>
   )
 }
 
