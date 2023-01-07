@@ -1,6 +1,8 @@
 import React from 'react';
 import { FiFacebook, FiLinkedin } from "react-icons/fi";
+import { Link } from 'react-router-dom';
 import Logo from '../assets/logoSoniaRachline.png';
+import MentionsLegales from './MentionsLegales';
 
 
 function Footer() {
@@ -13,6 +15,7 @@ function Footer() {
           </div>
         </div>
         <div className="md:flex gap-5">
+          <Link to={MentionsLegales}>MentionsLegales</Link>
           <p className='hover:text-green-700'>Mentions Légales </p>
           <p className='hover:text-yellow-500'>Politique De Confidentialité</p>
         </div>
