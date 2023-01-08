@@ -1,6 +1,7 @@
 import React from 'react';
 import { Disclosure } from '@headlessui/react';
 import { FiPlus } from 'react-icons/fi';
+import { CiLocationArrow1 } from "react-icons/ci";
 import Logo from '../assets/logoSoniaRachline.png';
 import partner1 from '../assets/p1.png';
 import partner2 from '../assets/p2.png';
@@ -32,6 +33,11 @@ function Hero() {
             <h1 className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-5xl md:text-6xl tracking-tight text-transparent">
               Sonia Rachline
             </h1>
+            <div className="flex space-x-3">
+              <p className=""><CiLocationArrow1 /> Paris </p>
+              <p className="">Expérience: 30 ans</p>
+              <p className="">Répond en: 24h</p>
+            </div>
             <p className="text-slate-100 text-xl lg:text-2xl tracking-widest
                         text-transparent bg-gradient-to-r from-yellow-200 via-green-400 to-lime-200 bg-clip-text">
                           Auteure | Ghostwriter | Rédactrice
