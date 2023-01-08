@@ -131,7 +131,7 @@ function Hero() {
       {/*section3 logo collaboration */}
       <div className="space-y-3">
         <p className="my-4 text-center text-xl uppercase text-slate-400 tracking-widest">Collaboration</p>
-        <div className="relative flex overflow-x-hidden">
+        <div className="overflow-x-hidden">
           <div className="flex animate-marquee h-14">
             <img src={partner1} alt="" className="" />
             <img src={partner3} alt="" className="" />
@@ -151,25 +151,29 @@ function Hero() {
             <img src={partner17} alt="" className="" />
             <img src={partner18} alt="" className="" />
           </div>
-          <div className="flex absolute top-0 animate-marquee2 h-14">
-          <img src={partner1} alt="" className="" />
-            <img src={partner3} alt="" className="" />
-            <img src={partner2} alt="" className="" />
-            <img src={partner4} alt="" className="" />
-            <img src={partner5} alt="" className="" />
-            <img src={partner6} alt="" className="" />
-            <img src={partner7} alt="" className="" />
-            <img src={partner8} alt="" className="" />
-            <img src={partner9} alt="" className="" />
-            <img src={partner10} alt="" className="" />
-            <img src={partner11} alt="" className="" />
-            <img src={partner13} alt="" className="" />
-            <img src={partner14} alt="" className="" />
-            <img src={partner15} alt="" className="" />
-            <img src={partner16} alt="" className="" />
-            <img src={partner17} alt="" className="" />
-            <img src={partner18} alt="" className="" />
-          </div>
+          {/* <div className="flex animate-marquee text-xl text-slate-50 whitespace-no-wrap">
+            <p className="">Vogue Chine</p>
+            <p className="">Vogue Japon</p>
+            <p className="">MarieC laire</p>
+            <p className="">AD</p>
+            <p className="">Air france Madame</p>
+            <p className="">Hermès</p>
+            <p className="">Le Printemps</p>
+            <p className="">Les Galeries Lafayette</p>
+            <p className="">Rémy Martin</p>
+            <p className="">Habitat</p>
+            <p className="">Christofle</p>
+            <p className="">Louis Vuitton</p>
+            <p className="">Nina Ricci Parfums</p>
+            <p className="">Arche</p>
+            <p className="">Lancôme</p>
+            <p className="">L’Oréal professionnel</p>
+            <p className="">Voyageurs du Monde</p>
+            <p className="">Balmain</p>
+            <p className="">Veuve Clicquot</p>
+            <p className="">Cheval Blanc</p>
+            <p className="">Dior Beauté</p>
+          </div> */}
         </div>
       </div>
     </section>
