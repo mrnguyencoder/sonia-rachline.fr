@@ -11,13 +11,11 @@ function Footer() {
       <div className="flex justify-between items-center py-8 px-2">
         <div className=''>
           <div>
-            <img src={Logo} alt="" className='h-20 hover:bg-slate-100 rounded-xl' />
+            <img src={Logo} alt="" className='h-20 hover:bg-slate-700 rounded-xl' />
           </div>
         </div>
-        <div className="md:flex gap-5">
-          <Link to="mentions-legales">Privacy Policy</Link>
-          <p href='' className='hover:text-green-700'>Mentions Légales </p>
-          <p className='hover:text-yellow-500'>Politique De Confidentialité</p>
+        <div className="">
+          <Link to="mentions-legales" className='hover:text-green-700'>Mentions Légales</Link>
         </div>
         <div className="text-3xl flex flex-col space-y-3">
             <a href="https://www.linkedin.com/in/sonia-rachline-64776630/?originalSubdomain=fr" 
