@@ -100,6 +100,9 @@ function ÀPropos() {
       </div>
       
       {/*section2 Video */}
+      {/* <div className="py-8 lg:py-16">
+        <iframe className='w-full aspect-video rounded-md' width="560" height="315" src="https://www.youtube.com/embed/Yk4gwtdeUr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div> */}
       
       {/*section3 logo collaboration */}
         <div className="space-y-3">
