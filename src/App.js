@@ -7,6 +7,7 @@ import Publications from './componants/Publications';
 import NavBar from './componants/NavBar';
 import { Route, Routes } from 'react-router-dom';
 import MentionsLegales from './componants/MentionsLegales';
+import Contact from './componants/Contact';
 
 
 
@@ -19,6 +20,7 @@ function App() {
           <Route path= "/a-propos" element={<ÀPropos />} />
           <Route path= "/articles" element={<Articles />} />
           <Route path= "/publications" element={<Publications />} />
+          <Route path= "/contact" element={<Contact />} />
           <Route path="/mentions-legales" element={<MentionsLegales />} />
         </Routes>
         <Footer/>

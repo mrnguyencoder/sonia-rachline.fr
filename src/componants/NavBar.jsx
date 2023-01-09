@@ -16,6 +16,7 @@ function NavBar() {
             <Link to="/a-propos" className="hover:text-green-600" >À Propos</Link>
             <Link to="/articles" className="hover:text-green-600" >Articles</Link>
             <Link to="/publications" className="hover:text-green-600" >Publications</Link>
+            <Link to="/contact" className="hover:text-green-600" >Contact</Link>
         </div>
 {/* Menu mobile */}
         <div className="md:hidden text-3xl flex justify-center items-center text-right">
@@ -28,12 +29,23 @@ function NavBar() {
                         <FcAbout className='text-3xl'/>
                         <Menu.Item>
                         {({ active }) => (
-                            <a
+                            <Link to="/"
                             className={`${active && ''}`}
-                            href="#Home"
+                            >
+                            Home
+                            </Link>
+                        )}
+                        </Menu.Item>
+                    </div>
+                    <div className="flex items-center justify-center space-x-4 text-xl cursor-pointer hover:bg-slate-200">
+                        <FcAbout className='text-3xl'/>
+                        <Menu.Item>
+                        {({ active }) => (
+                            <Link to="/a-propos"
+                            className={`${active && ''}`}
                             >
                             À Propos
-                            </a>
+                            </Link>
                         )}
                         </Menu.Item>
                     </div>
@@ -41,12 +53,11 @@ function NavBar() {
                         <FcNews className='text-3xl '/>
                         <Menu.Item>
                         {({ active }) => (
-                            <a
+                            <Link to="/articles"
                             className={`${active && ''}`}
-                            href="#articles"
                             >
                             Articles
-                            </a>
+                            </Link>
                         )}
                         </Menu.Item>
                     </div>
@@ -54,12 +65,11 @@ function NavBar() {
                         <FcReadingEbook className='text-4xl '/>
                         <Menu.Item>
                         {({ active }) => (
-                            <a
+                            <Link to="/publications"
                             className={`${active && ''}`}
-                            href="#Publications"
                             >
                             Publications
-                            </a>
+                            </Link>
                         )}
                         </Menu.Item>
                     </div>
@@ -67,12 +77,11 @@ function NavBar() {
                         <FcBusinesswoman className='text-3xl'/>
                         <Menu.Item>
                         {({ active }) => (
-                            <a
+                            <Link to="/contact"
                             className={`${active && ''}`}
-                            href="#contact"
                             >
                             Contact
-                            </a>
+                            </Link>
                         )}
                         </Menu.Item>
                     </div>
