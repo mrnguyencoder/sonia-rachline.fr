@@ -1,9 +1,6 @@
 import React from 'react';
 import { Disclosure } from '@headlessui/react';
 import { FiPlus } from 'react-icons/fi';
-import { CiLocationOn } from "react-icons/ci";
-import { BsVectorPen } from "react-icons/bs";
-import { GiSandsOfTime } from "react-icons/gi";
 import Logo from '../assets/logoSoniaRachline.png';
 
 
@@ -107,8 +104,31 @@ function ÀPropos() {
       {/*section3 logo collaboration */}
         <div className="space-y-3">
             <p className="my-4 text-center text-xl uppercase text-slate-400 tracking-widest">Collaboration</p>
-            <div class="overflow-x-hidden">
+            <div class="relative flex overflow-x-hidden">
                 <div class="py-8 animate-marquee whitespace-nowrap text-yellow-300">
+                    <span class="text-xl mx-2">Vogue Chine</span>
+                    <span class="text-xl mx-2">Vogue Japon</span>
+                    <span class="text-xl mx-2">MarieC laire</span>
+                    <span class="text-xl mx-2">AD</span>
+                    <span class="text-xl mx-2">Air france Madame</span>
+                    <span class="text-xl mx-2">Hermès</span>
+                    <span class="text-xl mx-2">Le Printemps</span>
+                    <span class="text-xl mx-2">Les Galeries Lafayette</span>
+                    <span class="text-xl mx-2">Rémy Martin</span>
+                    <span class="text-xl mx-2">Habitat</span>
+                    <span class="text-xl mx-2">Christofle</span>
+                    <span class="text-xl mx-2">Louis Vuitton</span>
+                    <span class="text-xl mx-2">Nina Ricci Parfums</span>
+                    <span class="text-xl mx-2">Arche</span>
+                    <span class="text-xl mx-2">Lancôme</span>
+                    <span class="text-xl mx-2">L’Oréal professionnel</span>
+                    <span class="text-xl mx-2">Voyageurs du Monde</span>
+                    <span class="text-xl mx-2">Balmain</span>
+                    <span class="text-xl mx-2">Veuve Clicquot</span>
+                    <span class="text-xl mx-2">Cheval Blanc</span>
+                    <span class="text-xl mx-2">Dior Beauté</span>
+                </div>
+                <div class="absolute top-0 py-8 animate-marquee3 whitespace-nowrap text-yellow-300">
                     <span class="text-xl mx-2">Vogue Chine</span>
                     <span class="text-xl mx-2">Vogue Japon</span>
                     <span class="text-xl mx-2">MarieC laire</span>
