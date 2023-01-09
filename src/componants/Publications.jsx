@@ -1,5 +1,5 @@
 import React from 'react';
-// import book1 from '../assets/book1.jpeg';
+import book1 from '../assets/book1.jpeg';
 // import book2 from '../assets/book2.webp';
 // import book3 from '../assets/book3.webp';
 // import book6 from '../assets/book6.webp';
@@ -53,68 +53,98 @@ function Publications() {
         
     //   ];
   return (
-    <section id="Publications" className=''>
-        <div className="my-16 text-center">
-            <p className="text-4xl lg:text-6xl inline bg-gradient-to-r from-blue-700 via-slate-50 to-red-600 bg-clip-text font-display tracking-wider text-transparent">Les Publications</p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-cyan-600 border-y-2 text-slate-100">
-          <div className="border p-4 rounded-md m-2 hover:bg-cyan-700 space-y-2 ">
-            <h2 className="text-lg text-center text-blue-800">ROMANS - PSEUDONYME SONIA DAVID</h2>
-            <p className="">1, L’invention de la Vérité (écriture en cours - Lauréate d’une bourse du CNL)</p>
-            <p className="">2, David Bowie n’est pas mort, Robert Laffont, 2017</p>
-            <p className="">3, Les petits succès sont un désastre, Robert Laffont, 2012</p>
-          </div>
-          <div className="border p-4 rounded-md m-2 hover:bg-cyan-700 space-y-2 ">
-            <h2 className="text-lg text-center text-blue-800">GHOSTWRITING</h2>
-            <p className="">1,Mélancolique Rodéo - Jean Michel Jarre, Robert Laffont 2019</p>
-          </div>
-          <div className="border p-4 rounded-md m-2 hover:bg-cyan-700 space-y-2 ">
-            <h2 className="text-lg text-center text-blue-800">DIVERS</h2>
-            <p className="">1, Claude Brouet, Journaliste de mode, éditions du Regard, 2022</p>
-            <p className="">2, Lido, Plumes stass et Emotions, Flammarion 2021</p>
-            <p className="">3, Karl Lagerfeld de A à Z, Gallimard, 2019</p>
-            <p className="">4, C’est le Printemps la Martinière, 2015</p>
-            <p className="">5, Vogue Covers, Ramsay, 2015</p>
-            <p className="">6, Vogue à la Mer, Ramsay, 2008</p>
-            <p className="">7, Le Monde de –M-, Le Seuil, 2005</p>
-          </div>
-          <div className="border p-4 rounded-md m-2 hover:bg-cyan-700 space-y-2 ">
-            <h2 className="text-lg text-center text-blue-800">COLLABORATIONS</h2>
-            <p className="">1, Marithé+François Girbaud, La Martinière, 2012</p>
-            <p className="">2, Maison Martin Margiela, éditions Rizzoli, 2009</p>
-            <p className="">3, Vingt ans de système de mode, éditions IFM-Regard? 2008</p>
-          </div>
-        </div>
-        {/* <ul className="grid gap-6 md:gap-10 lg:gap-20  md:grid-cols-2 lg:grid-cols-3 md:p-6">
-        {livreItems.map((item) => (
-            <li key={item.name} className="text-slate-50">
-                <div className="flex shadow-lg border rounded-lg bg-slate-700 hover:bg-slate-800">
-                    <div className="p-8 space-y-3">
-                        <p className="text-3xl">{item.name}</p>
-                        <p className="text-zinc-300 italic text-right">{item.date}</p>
-                        <p className="">{item.title}</p>
-                        <div className="flex justify-around pt-5">
-                            <a href={item.detail} 
-                                rel='noreferrer' target="_blank"
-                                className="bg-teal-600 rounded-full">
-                            <p className="text-slate-50 px-6 py-2 ">Plus Info</p>
-                            </a>
-                            <a href={item.buy} 
-                                rel='noreferrer' target="_blank"
-                                className="bg-[#ff9900] rounded-full ring-1 ring-slate-50 animate-pulse">
-                            <p className="text-slate-50  px-6 py-2 ">Acheter</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div className="mt-8 mr-2">
-                        <img src={item.image} alt="" className='rounded-lg' />
-                    </div>
-                </div>
+    // <section id="Publications" className=''>
+    //     <div className="my-16 text-center">
+    //         <p className="text-4xl lg:text-6xl inline bg-gradient-to-r from-blue-700 via-slate-50 to-red-600 bg-clip-text font-display tracking-wider text-transparent">Les Publications</p>
+    //     </div>
+    //     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-cyan-600 border-y-2 text-slate-100">
+    //       <div className="border p-4 rounded-md m-2 hover:bg-cyan-700 space-y-2 ">
+    //         <h2 className="text-lg text-center text-blue-800">ROMANS - PSEUDONYME SONIA DAVID</h2>
+    //         <p className="">1, L’invention de la Vérité (écriture en cours - Lauréate d’une bourse du CNL)</p>
+    //         <p className="">2, David Bowie n’est pas mort, Robert Laffont, 2017</p>
+    //         <p className="">3, Les petits succès sont un désastre, Robert Laffont, 2012</p>
+    //       </div>
+    //       <div className="border p-4 rounded-md m-2 hover:bg-cyan-700 space-y-2 ">
+    //         <h2 className="text-lg text-center text-blue-800">GHOSTWRITING</h2>
+    //         <p className="">1,Mélancolique Rodéo - Jean Michel Jarre, Robert Laffont 2019</p>
+    //       </div>
+    //       <div className="border p-4 rounded-md m-2 hover:bg-cyan-700 space-y-2 ">
+    //         <h2 className="text-lg text-center text-blue-800">DIVERS</h2>
+    //         <p className="">1, Claude Brouet, Journaliste de mode, éditions du Regard, 2022</p>
+    //         <p className="">2, Lido, Plumes stass et Emotions, Flammarion 2021</p>
+    //         <p className="">3, Karl Lagerfeld de A à Z, Gallimard, 2019</p>
+    //         <p className="">4, C’est le Printemps la Martinière, 2015</p>
+    //         <p className="">5, Vogue Covers, Ramsay, 2015</p>
+    //         <p className="">6, Vogue à la Mer, Ramsay, 2008</p>
+    //         <p className="">7, Le Monde de –M-, Le Seuil, 2005</p>
+    //       </div>
+    //       <div className="border p-4 rounded-md m-2 hover:bg-cyan-700 space-y-2 ">
+    //         <h2 className="text-lg text-center text-blue-800">COLLABORATIONS</h2>
+    //         <p className="">1, Marithé+François Girbaud, La Martinière, 2012</p>
+    //         <p className="">2, Maison Martin Margiela, éditions Rizzoli, 2009</p>
+    //         <p className="">3, Vingt ans de système de mode, éditions IFM-Regard? 2008</p>
+    //       </div>
+    //     </div>
+    //     {/* <ul className="grid gap-6 md:gap-10 lg:gap-20  md:grid-cols-2 lg:grid-cols-3 md:p-6">
+    //     {livreItems.map((item) => (
+    //         <li key={item.name} className="text-slate-50">
+    //             <div className="flex shadow-lg border rounded-lg bg-slate-700 hover:bg-slate-800">
+    //                 <div className="p-8 space-y-3">
+    //                     <p className="text-3xl">{item.name}</p>
+    //                     <p className="text-zinc-300 italic text-right">{item.date}</p>
+    //                     <p className="">{item.title}</p>
+    //                     <div className="flex justify-around pt-5">
+    //                         <a href={item.detail} 
+    //                             rel='noreferrer' target="_blank"
+    //                             className="bg-teal-600 rounded-full">
+    //                         <p className="text-slate-50 px-6 py-2 ">Plus Info</p>
+    //                         </a>
+    //                         <a href={item.buy} 
+    //                             rel='noreferrer' target="_blank"
+    //                             className="bg-[#ff9900] rounded-full ring-1 ring-slate-50 animate-pulse">
+    //                         <p className="text-slate-50  px-6 py-2 ">Acheter</p>
+    //                         </a>
+    //                     </div>
+    //                 </div>
+    //                 <div className="mt-8 mr-2">
+    //                     <img src={item.image} alt="" className='rounded-lg' />
+    //                 </div>
+    //             </div>
                 
-            </li>
+    //         </li>
          
-        ))}
-        </ul> */}
+    //     ))}
+    //     </ul> */}
+    // </section>
+    <section className="">
+      <div className="grid grid-cols-1 md:grid-cols-2 text-xl text-center text-slate-50">
+        <div className="space-y-3">
+          <h2 className="text-red-600 text-4xl py-4">Sonia David</h2>
+          <p className="">David Bowie n’est pas mort, Robert Laffont, 2017</p>
+          <p className="">Les petits succès sont un désastre, Robert Laffont, 2012</p>
+        </div>
+        <div className="space-y-3">
+          <h2 className="text-red-600 text-4xl py-4">Sonia Rachline</h2>
+          <p className="">Claude Brouet, Journaliste de mode, éditions du Regard, 2022</p>
+          <p className="">Lido, Plumes stass et Emotions, Flammarion 2021</p>
+          <p className="">Karl Lagerfeld de A à Z, Gallimard, 2019</p>
+          <p className="">C’est le Printemps la Martinière, 2015</p>
+          <p className="">Vogue Covers, Ramsay, 2015</p>
+          <p className="">Vogue à la Mer, Ramsay, 2008</p>
+          <p className="">Le Monde de –M-, Le Seuil, 2005</p>
+        </div>
+        <div className="space-y-3">
+          <h2 className="text-red-600 text-4xl py-4">Ghostwriting</h2>
+          <p className="">Mélancolique Rodéo - Jean Michel Jarre, Robert Laffont 2019</p>
+        </div>
+        <div className="space-y-3">
+          <h2 className="text-red-600 text-4xl py-4">Collaborations</h2>
+          <p className="">What Is Left Unspoken, Love, DelMonico Books & High Museum of Art, 2022</p>
+          <p className="">Marithé+François Girbaud, La Martinière, 2012</p>
+          <p className="">Maison Martin Margiela, éditions Rizzoli, 2009</p>
+          <p className="">Vingt ans de système de mode, éditions IFM-Regard? 2008</p>
+        </div>
+      </div>
     </section>
   )
 }

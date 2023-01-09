@@ -13,7 +13,7 @@ import Contact from './componants/Contact';
 
 function App() {
   return (
-    <div className='bg-slate-800'>
+    <div className='bg-slate-900'>
         <NavBar />
         <Routes>
           <Route path= "/" element={<Home />} />
