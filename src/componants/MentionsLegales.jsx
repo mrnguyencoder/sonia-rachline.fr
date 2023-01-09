@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 function MentionsLegales() {
   return (
-    <div id="mentionslegales">MentionsLegales</div>
+    <div>Mentions Legales</div>
   )
 }
 

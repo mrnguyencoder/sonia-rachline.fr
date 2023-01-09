@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from '../assets/textsonia.png';
 import { Menu } from '@headlessui/react';
 import { FcAbout, FcBusinesswoman, FcMenu, FcNews, FcReadingEbook } from "react-icons/fc";
+import { Link } from 'react-router-dom';
 
 function NavBar() {
     
@@ -11,10 +12,10 @@ function NavBar() {
             <img className='h-10 ' src={Logo} alt="Sonia Rachline" />
         </div>
         <div className="hidden md:flex items-center text-xl space-x-5 text-slate-50 pr-4 ">
-            <a className="hover:text-green-600" href="#hero">À Propos</a>
-            <a className="hover:text-green-500" href="#articles">Articles</a>
-            <a className="hover:text-green-400" href="#Publications">Publications</a>
-            <a className="hover:text-green-300" href="#contact">Contact</a>
+            <Link to="/" className="hover:text-green-600" >Home</Link>
+            <Link to="/a-propos" className="hover:text-green-600" >À Propos</Link>
+            <Link to="/articles" className="hover:text-green-600" >Articles</Link>
+            <Link to="/publications" className="hover:text-green-600" >Publications</Link>
         </div>
 {/* Menu mobile */}
         <div className="md:hidden text-3xl flex justify-center items-center text-right">
@@ -29,7 +30,7 @@ function NavBar() {
                         {({ active }) => (
                             <a
                             className={`${active && ''}`}
-                            href="#hero"
+                            href="#Home"
                             >
                             À Propos
                             </a>
