@@ -3,7 +3,7 @@ import React from 'react';
 
 function Home() {
   return (
-    <section className="">
+    <section className="h-screen">
       <div className="grid md:grid-cols-2 text-center p-8">
         <div className="">
           <h1 className="text-4xl text-red-600 p-8">Sonia Rachline</h1>
