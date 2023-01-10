@@ -29,8 +29,9 @@ function Footer() {
             </a>
           </div>
       </div>
+      
       <div className="text-center pb-6 md:flex ">
-        <div className="hover:text-slate-500">© 2022 Sonia Rachline | 
+        <div className="hover:text-slate-500">©{new Date().getFullYear()} Sonia Rachline 
         </div>
         <a
           href="https://nguyencoder.com/"
