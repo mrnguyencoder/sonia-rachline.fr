@@ -7,7 +7,6 @@ function Home() {
     <section className='flex flex-col justify-between items-center '>
       <div className="">
         <div className="lg:flex justify-between items-center m-1 lg:border lg:m-20 rounded-2xl shadow-lg">
-          {/* Text */}
           <div className="flex flex-col text-center p-10 space-y-5">
             <h1 className=" text-red-600  font-display text-5xl md:text-6xl tracking-tight text-transparent">
               Sonia David
@@ -27,7 +26,7 @@ function Home() {
       
 
       
-      {/*section3 logo collaboration */}
+      {/*section2 text */}
       <div class="flex overflow-x-hidden">
                 <div class="py-8 animate-marquee whitespace-nowrap text-red-500">
                     <span class="text-xl mx-2">Sonia David</span>
