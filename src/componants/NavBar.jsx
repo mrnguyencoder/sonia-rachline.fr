@@ -11,7 +11,7 @@ function NavBar() {
         <div className="">
             <img className='h-10 ' src={Logo} alt="Sonia Rachline" />
         </div>
-        <div className="hidden md:flex items-center text-xl space-x-5 text-red-600 pr-4 ">
+        <div className="hidden md:flex items-center text-xl space-x-5 text-red-600 pr-4">
             <Link to="/" className="hover:text-red-500" >Accueil</Link>
             <Link to="/publications" className="hover:text-green-600" >Publications</Link>
             {/* <Link to="/a-propos" className="hover:text-green-600" >À Propos</Link>
