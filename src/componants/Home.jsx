@@ -4,16 +4,18 @@ import React from 'react';
 function Home() {
   return (
     <section className="h-screen">
-      <div className="grid lg:grid-cols-2 text-center p-8">
-        <div className="">
-          <h1 className="text-4xl text-red-600 pt-8">Sonia Rachline</h1>
-          <h3 className="text-2xl text-red-800">Rédactrice Journaliste</h3>
-          <p className="text-xl text-slate-100 px-6">Sonia Rachline est l'auteure de deux romans Les Petits Succès sont un désastre et David Bowie n'est pas mort (Robert Laffont, 2012 et 2017).</p>
-        </div>
-        <div className="">
-          <h2 className="text-4xl text-red-600 pt-8">Sonia David</h2>
-          <h3 className="text-2xl text-red-800 pt-2">Écrivain</h3>
-          <p className="text-xl text-slate-100 px-6">Sonia David, de son vrai nom, Sonia Rachline, est rédactrice journaliste, notamment pour 'Vogue' depuis 25 ans</p>
+      <div className="bg-gradient-to-tl from-cyan-500 to-blue-500 ">
+        <div className="grid lg:grid-cols-2 text-center p-8">
+          <div className="">
+            <h1 className="text-4xl text-red-600 pt-8">Sonia Rachline</h1>
+            <h3 className="text-2xl text-red-800">Rédactrice Journaliste</h3>
+            <p className="text-xl text-slate-100 px-6">Sonia Rachline est l'auteure de deux romans Les Petits Succès sont un désastre et David Bowie n'est pas mort (Robert Laffont, 2012 et 2017).</p>
+          </div>
+          <div className="">
+            <h2 className="text-4xl text-red-600 pt-8">Sonia David</h2>
+            <h3 className="text-2xl text-red-800 pt-2">Écrivain</h3>
+            <p className="text-xl text-slate-100 px-6">Sonia David, de son vrai nom, Sonia Rachline, est rédactrice journaliste, notamment pour 'Vogue' depuis 25 ans</p>
+          </div>
         </div>
       </div>
 
