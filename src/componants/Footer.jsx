@@ -10,7 +10,12 @@ function Footer() {
     <footer className='flex flex-col bg-slate-800 px-4'>
       <div className="flex justify-between items-center p-4">
         <img src={Logo} alt="sonia rachline" className='h-20' />
-        <Link to="mentions-legales" className='text-slate-300 hover:text-green-700'>Mentions Légales</Link>
+        <div className="flex  flex-col items-center">
+          <Link to="mentions-legales" className='text-slate-300 hover:text-green-700'>Mentions Légales</Link>
+          <p className="hover:text-red-600 text-slate-400">
+            ©{new Date().getFullYear()} Sonia Rachline
+          </p>
+        </div>
         <div className="text-3xl md:text-5xl flex space-x-3">
             <a href="https://www.facebook.com/sonia.david.92" 
               className=""
@@ -23,18 +28,6 @@ function Footer() {
               <FiLinkedin className='text-[#0e76a8] hover:text-red-700'/>
             </a>
           </div>
-      </div>
-      
-      <div className="text-center pb-6 md:flex ">
-        <p className="hover:text-red-600 text-slate-400">
-          ©{new Date().getFullYear()} Sonia Rachline 
-        </p>   
-        <a
-          href="https://nguyencoder.com/"
-          rel='noreferrer' target="_blank"
-          className="text-[#61DBFB] hover:text-[#3c873a]">
-          Developed by nguyendev
-        </a>  
       </div>
 
     </footer>

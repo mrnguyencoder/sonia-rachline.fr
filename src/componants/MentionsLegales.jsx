@@ -8,7 +8,7 @@ function MentionsLegales() {
       <h2 className="text-center p-10 text-3xl">Mentions légales</h2>
 
             {/* Disclosure begin */}
-            <div className="">
+            <div className="py-4 md:py-20">
               <div className='p-6 md:px-20 lg:px-30'>
                 <Disclosure>
                 {({ open }) => (
