@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -9,7 +10,7 @@ function Publications() {
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 text-xl text-center text-slate-50 p-10 md:p-20 lg:p-30">
         <div className="space-y-3 rotate-2 p-8">
           <h2 className="text-red-600 text-4xl py-4">Sonia David</h2>
-          <p className="">David Bowie n’est pas mort, Robert Laffont, 2017</p>
+          <Link to="/PublicationDetails/" className="">David Bowie n’est pas mort, Robert Laffont, 2017</Link>
           <p className="">Les petits succès sont un désastre, Robert Laffont, 2012</p>
         </div>
         <div className="space-y-3 -rotate-2 p-8">
