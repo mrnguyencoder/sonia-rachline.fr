@@ -5,12 +5,12 @@ function Home() {
   return (
     <section className="flex flex-col justify-between items-center space-y-8 lg:space-y-20 p-10 md:p-20 lg:p-32">
       <div className="-rotate-3 px-10 pt-16 md:pt-0 ">
-        <h1 className="text-4xl text-red-600 md:hover:animate-ping">Sonia Rachline</h1>
+        <h1 className="text-4xl text-red-600 hover:animate-ping">Sonia Rachline</h1>
         <h3 className="text-2xl text-red-800">Rédactrice Journaliste</h3>
         <p className="text-xl text-slate-100 max-w-4xl pt-5">Sonia Rachline est l'auteure de deux romans Les Petits Succès sont un désastre et David Bowie n'est pas mort (Robert Laffont, 2012 et 2017).</p>
       </div>
       <div className="-rotate-3 px-10 ">
-        <h2 className="text-4xl text-red-600 md:hover:animate-ping">Sonia David</h2>
+        <h2 className="text-4xl text-red-600 hover:animate-ping">Sonia David</h2>
         <h3 className="text-2xl text-red-800">Écrivain</h3>
         <p className="text-xl text-slate-100 max-w-4xl pt-5">Sonia David, de son vrai nom, Sonia Rachline, est rédactrice journaliste, notamment pour 'Vogue' depuis 25 ans</p>
       </div>
