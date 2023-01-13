@@ -8,9 +8,9 @@ function NavBar() {
     
   return (
     <nav className='flex justify-between p-3 shadow-sm bg-slate-800 text-red-600'>
-        <div className="">
+        <Link to="/" className="">
             <img className='h-10 ' src={Logo} alt="Sonia Rachline" />
-        </div>
+        </Link>
         <div className="hidden md:flex items-center text-xl space-x-5 text-red-600 pr-4">
             <Link to="/" className="hover:text-red-500" >Accueil</Link>
             <Link to="/publications" className="hover:text-green-600" >Publications</Link>
