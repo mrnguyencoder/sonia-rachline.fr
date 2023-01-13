@@ -107,8 +107,8 @@ function MentionsLegales() {
                         } text-3xl text-gray-100`}/>
                   </Disclosure.Button>
                   <Disclosure.Panel className="p-4 text-lg md:text-xl lg:text-2xl">
-                  <p>La structure générale ainsi que les logiciels, textes, images animées ou non, son savoir-faire et tous les autres éléments composant le site sont la propriété exclusive de SoniaRachline.fr .</p>
-                  <p>Toute représentation totale ou partielle de ce site par quelque personne que ce soit, sans l'autorisation expresse de SoniaRachline.fr est interdite et constituerait une contrefaçon sanctionnée par les articles L. 335-2 et suivants du Code de la propriété intellectuelle.</p>
+                  <p>La structure générale ainsi que les logiciels, textes, images animées ou non, son savoir-faire et tous les autres éléments composant le site sont la propriété exclusive de soniarachline.fr .</p>
+                  <p>Toute représentation totale ou partielle de ce site par quelque personne que ce soit, sans l'autorisation expresse de soniarachline.fr est interdite et constituerait une contrefaçon sanctionnée par les articles L. 335-2 et suivants du Code de la propriété intellectuelle.</p>
                   <p className="">Il en est de même des bases de données figurant, le cas échéant sur le site web qui sont protégées par les dispositions de la loi du 1er juillet 1998 portant transposition dans le Code de la propriété intellectuelle de la directive du 11 mars 1996 relative à la protection juridique des bases de données, et dont soniarachline.fr est producteur. Les marques des partenaires de soniarachline.fr, ainsi que les logos figurant sur le site sont des marques déposées.</p>
                   <p>Toute reproduction totale ou partielle de ces marques ou de ces logos effectués à partir des éléments du site sans l'autorisation expresse de soniarachline.fr est donc prohibée au sens du Code de la propriété intellectuelle.</p>
                   </Disclosure.Panel>
