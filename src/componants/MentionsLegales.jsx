@@ -20,7 +20,7 @@ function MentionsLegales() {
                         } text-3xl text-gray-100`}/>
                   </Disclosure.Button>
                   <Disclosure.Panel className="p-4 text-lg md:text-xl lg:text-2xl">
-                  <p className="">Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l’économie numérique, dite L.C.E.N., il est porté à la connaissance des utilisateurs et visiteurs, ci-après l""Utilisateur", du site https://carolebethuel.fr , ci-après le "Site", les présentes mentions légales.</p>
+                  <p className="">Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l’économie numérique, dite L.C.E.N., il est porté à la connaissance des utilisateurs et visiteurs, ci-après l""Utilisateur", du site https://soniarachline.fr , ci-après le "Site", les présentes mentions légales.</p>
                   <p className="">La connexion et la navigation sur le Site par l’Utilisateur implique acceptation intégrale et sans réserve des présentes mentions légales.</p>
                   <p className="">Ces dernières sont accessibles sur le Site à la rubrique « Mentions légales ».</p>
                   </Disclosure.Panel>
