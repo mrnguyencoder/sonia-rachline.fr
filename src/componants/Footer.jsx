@@ -9,10 +9,10 @@ function Footer() {
   return (
     <footer className='flex flex-col bg-slate-800 px-4'>
       <div className="flex justify-between items-center p-4">
-        <img src={Logo} alt="sonia rachline" className='h-20' />
+        <Link to="/"><img src={Logo} alt="sonia rachline" className='h-20 hover:animate-pulse' /></Link>
         <div className="flex  flex-col items-center">
-          <Link to="mentions-legales" className='text-slate-300 hover:text-green-700'>Mentions Légales</Link>
-          <p className="hover:text-red-600 text-slate-400">
+          <Link to="mentions-legales" className='text-slate-300 hover:animate-pulse'>Mentions Légales</Link>
+          <p className="hover:animate-pulse text-slate-400">
             ©{new Date().getFullYear()} Sonia Rachline
           </p>
         </div>
