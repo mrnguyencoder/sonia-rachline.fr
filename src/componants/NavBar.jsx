@@ -2,13 +2,13 @@ import React from 'react';
 import Logo from '../assets/textsonia.png';
 import { Menu } from '@headlessui/react';
 import { Link } from 'react-router-dom';
-import { BackspaceIcon, Bars2Icon, BookOpenIcon, ChatBubbleBottomCenterIcon, HomeIcon } from '@heroicons/react/24/outline';
+import { Bars2Icon } from '@heroicons/react/24/outline';
 
 function NavBar() {
     const links = [
-        { to: '/', label: 'Accueil', icon: 'Home' },
-        { to: '/publications', label: 'Publications', icon: 'BookOpen' },
-        { to: '/contact', label: 'Contact', icon: 'ChatBubbleBottomCenter' },
+        { to: '/', label: 'Accueil', },
+        { to: '/publications', label: 'Publications', },
+        { to: '/contact', label: 'Contact',},
       ]
   return (
     <nav className='flex justify-between p-3 shadow-sm bg-slate-800 text-red-600'>
@@ -20,52 +20,7 @@ function NavBar() {
             <Link to="/publications" className="hover:animate-pulse" >Publications</Link>
             <Link to="/contact" className="hover:animate-pulse" >Contact</Link>
         </div>
-{/* Menu mobile */}
-        {/* <div className="md:hidden text-3xl flex justify-center items-center text-right">
-            <Menu as="div" className="relative inline-block" >
-                <Menu.Button className=""> 
-                    <Bars2Icon className='h-10'/>
-                </Menu.Button>     
-                <Menu.Items className="absolute space-y-4 text-base p-4 right-0 w-64 origin-top-right rounded-md bg-gray-800 shadow-lg">
-                    <div className="flex items-center justify-center space-x-4 text-2xl cursor-pointer hover:bg-gray-700 px-4 py-2 rounded-2xl transition ease-in-out duration-500 ">
-                        <HomeIcon className='h-8'/>
-                        <Menu.Item>
-                        {({ active }) => (
-                            <Link to="/"
-                            className={`${active && ''}`}
-                            >
-                            Accueil
-                            </Link>
-                        )}
-                        </Menu.Item>
-                    </div>
-                    <div className="flex items-center justify-center space-x-4 text-2xl cursor-pointer hover:bg-gray-700 px-4 py-2 rounded-2xl transition ease-in-out duration-500">
-                        <BookOpenIcon className='h-8'/>
-                        <Menu.Item>
-                        {({ active }) => (
-                            <Link to="/publications"
-                            className={`${active && ''}`}
-                            >
-                            Publications
-                            </Link>
-                        )}
-                        </Menu.Item>
-                    </div>
-                    <div className="flex items-center justify-center space-x-4 text-2xl cursor-pointer hover:bg-gray-700 px-4 py-2 rounded-2xl transition ease-in-out duration-500">
-                        <ChatBubbleBottomCenterIcon className='h-8'/>
-                        <Menu.Item>
-                        {({ active }) => (
-                            <Link to="/contact"
-                            className={`${active && ''}`}
-                            >
-                            Contact
-                            </Link>
-                        )}
-                        </Menu.Item>
-                    </div>
-                </Menu.Items>
-            </Menu>
-        </div> */}
+        {/* Menu mobile */}
         <Menu as="div" className="md:hidden text-right">
             <Menu.Button>
                 <Bars2Icon className='h-10 hover:animate-pulse'/>
@@ -80,8 +35,7 @@ function NavBar() {
                         className={`${
                         active && 'rounded-xl bg-gray-700 px-4 py-2 transition ease-in-out duration-500 hover:animate-pulse'
                         }`}
-                    >
-                        
+                    >         
                         {link.label}
                     </Link>
                     )}
