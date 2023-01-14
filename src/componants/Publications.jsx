@@ -25,6 +25,7 @@ function Publications() {
         </div>
         <div className="space-y-3 rotate-2 p-8">
           <h2 className="text-red-600 text-4xl py-4">Ghostwriting</h2>
+          <p className="">Melissa - Marco Palmieri, Gallimard Jeunesse, 2010</p>
           <p className="">Mélancolique Rodéo - Jean Michel Jarre, Robert Laffont 2019</p>
         </div>
         <div className="space-y-3 -rotate-2 p-8">
