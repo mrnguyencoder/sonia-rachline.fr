@@ -38,7 +38,7 @@ function Home() {
           <span class="mx-3 text-3xl">Vogue à la Mer, 2008</span>
           <span class="mx-3 text-3xl">Le Monde de –M-, 2005</span>
         </div>
-        <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
+        {/* <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
           <span class="mx-3 text-3xl">Sonia David:</span>
           <span class="mx-3 text-3xl">David Bowie n’est pas mort, 2017</span>
           <span class="mx-3 text-3xl">Les petits succès sont un désastre, 2012</span>
@@ -53,7 +53,7 @@ function Home() {
           <span class="mx-3 text-3xl">Vogue Covers, 2015</span>
           <span class="mx-3 text-3xl">Vogue à la Mer, 2008</span>
           <span class="mx-3 text-3xl">Le Monde de –M-, 2005</span>
-        </div>
+        </div> */}
       </div>
     </section>
   )
