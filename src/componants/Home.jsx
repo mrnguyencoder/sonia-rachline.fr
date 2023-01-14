@@ -23,18 +23,36 @@ function Home() {
       {/* Section loop marquee text */}
       <div class="relative flex overflow-x-hidden text-red-700">
         <div class="block py-12 animate-marquee whitespace-nowrap">
-          <span class="mx-3 text-3xl">Sonia David</span>
-          <span class="mx-3 text-3xl">Sonia Rachline</span>
-          <span class="mx-3 text-3xl">ROMANS - PSEUDONYME SONIA DAVID</span>
-          <span class="mx-3 text-3xl">GHOSTWRITING</span>
+          <span class="mx-3 text-3xl">Sonia David:</span>
           <span class="mx-3 text-3xl">David Bowie n’est pas mort, Robert Laffont, 2017</span>
-        </div>
-        <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
           <span class="mx-3 text-3xl">Les petits succès sont un désastre, Robert Laffont, 2012</span>
+          <span class="mx-3 text-3xl">Ghostwriting:</span>
           <span class="mx-3 text-3xl">Mélancolique Rodéo - Jean Michel Jarre, Robert Laffont 2019</span>
+          <span class="mx-3 text-3xl">Melissa - Marco Palmieri, Gallimard Jeunesse, 2010</span>
+          <span class="mx-3 text-3xl">Sonia Rachline:</span>
           <span class="mx-3 text-3xl">Claude Brouet, Journaliste de mode, éditions du Regard, 2022</span>
           <span class="mx-3 text-3xl">Lido, Plumes stass et Emotions, Flammarion 2021</span>
           <span class="mx-3 text-3xl">Karl Lagerfeld de A à Z, Gallimard, 2019</span>
+          <span class="mx-3 text-3xl">C’est le Printemps la Martinière, 2015</span>
+          <span class="mx-3 text-3xl">Vogue Covers, Ramsay, 2015</span>
+          <span class="mx-3 text-3xl">Vogue à la Mer, Ramsay, 2008</span>
+          <span class="mx-3 text-3xl">Le Monde de –M-, Le Seuil, 2005</span>
+        </div>
+        <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
+        <span class="mx-3 text-3xl">Sonia David:</span>
+          <span class="mx-3 text-3xl">David Bowie n’est pas mort, Robert Laffont, 2017</span>
+          <span class="mx-3 text-3xl">Les petits succès sont un désastre, Robert Laffont, 2012</span>
+          <span class="mx-3 text-3xl">Ghostwriting:</span>
+          <span class="mx-3 text-3xl">Mélancolique Rodéo - Jean Michel Jarre, Robert Laffont 2019</span>
+          <span class="mx-3 text-3xl">Melissa - Marco Palmieri, Gallimard Jeunesse, 2010</span>
+          <span class="mx-3 text-3xl">Sonia Rachline:</span>
+          <span class="mx-3 text-3xl">Claude Brouet, Journaliste de mode, éditions du Regard, 2022</span>
+          <span class="mx-3 text-3xl">Lido, Plumes stass et Emotions, Flammarion 2021</span>
+          <span class="mx-3 text-3xl">Karl Lagerfeld de A à Z, Gallimard, 2019</span>
+          <span class="mx-3 text-3xl">C’est le Printemps la Martinière, 2015</span>
+          <span class="mx-3 text-3xl">Vogue Covers, Ramsay, 2015</span>
+          <span class="mx-3 text-3xl">Vogue à la Mer, Ramsay, 2008</span>
+          <span class="mx-3 text-3xl">Le Monde de –M-, Le Seuil, 2005</span>
         </div>
       </div>
     </section>
