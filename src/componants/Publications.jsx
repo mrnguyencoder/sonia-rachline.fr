@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import img1 from '../assets/book1.jpeg'
+import img1 from '../assets/book1.jpeg';
+import img2 from '../assets/book2.jpeg';
 
 const books = [
   {
@@ -14,21 +15,21 @@ const books = [
     image: img1 ,
     buyLink: `https://www.amazon.fr/David-Bowie-nest-pas-mort/dp/2221200284`,
   },
-  // {
-  //   id: 2,
-  //   title: ``,
-  //   name: `Les petits succès sont un désastre`,
-  //   editeur: ``,
-  //   datePublished: ``,
-  //   resume: ``,
-  //   image: ,
-  //   buyLink: ``,
-  // },
+  {
+    id: 2,
+    title: `les-petits-succes-sont-un-desastre`,
+    name: `Les petits succès sont un désastre`,
+    editeur: `Robert Laffont`,
+    datePublished: `05/01/2012`,
+    resume: `Quand elle ne traduit pas (c’est son métier), le passe-temps favori de Rose est de « (se) faire des romans » sur tout ce qui l’entoure, de préférence avec la « Pap’ Team », ses amis et voisins qu’elle retrouve régulièrement au Papillon, leur bistrot de Montmartre. Dans ses tiroirs traînent des dizaines de débuts d’histoires, toutes inachevées. Le jour où elle reçoit 60 000 euros en gagnant un jeu-concours sur Internet, Rose décide de se lancer (enfin !) et de prendr...`,
+    image: img2,
+    buyLink: `https://www.amazon.fr/petits-succ%C3%A8s-sont-d%C3%A9sastre/dp/2221126017`,
+  },
   // {
   //   id: 3,
-  //   title: ``,
+  //   title: `claude-brouet-journaliste-de-mode`,
   //   name: `Claude Brouet, Journaliste de mode`,
-  //   editeur: ``,
+  //   editeur: `Regard`,
   //   datePublished: ``,
   //   resume: ``,
   //   image: ,
@@ -74,12 +75,12 @@ function Publications() {
     <section className="">
       {selectedBook ? (
         <div className="lg:flex p-8">
-          <div className="text-red-600 space-y-4 text-xl">
+          <div className="flex flex-col justify-center items-center text-red-600 space-y-4 text-xl max-w-4xl">
             <h2 className="text-4xl">{selectedBook.name}</h2>
-            <p className="">Editeur: {selectedBook.editeur}</p>
-            <p className="">Date Published: {selectedBook.datePublished}</p>
+            <p className="">Éditeur: {selectedBook.editeur}</p>
+            <p className="">Date de publication: {selectedBook.datePublished}</p>
             <p className="">Resume: {selectedBook.resume}</p>
-            <a href={selectedBook.buyLink} target="_blank" rel="noreferrer" className="flex justify-center items-center btn btn-outline btn-success">Buy now</a>
+            <a href={selectedBook.buyLink} target="_blank" rel="noreferrer" className="flex justify-center items-center px-6 py-2 shadow-lg bg-sky-900 rounded-full hover:animate-pulse">Buy now</a>
           </div>
           <div className="p-8">
             <img src={selectedBook.image} alt={selectedBook.name}
@@ -87,9 +88,9 @@ function Publications() {
           </div>
         </div>
       ) : (
-        <div className="">
-          <h2 className="">Publications</h2>
-          <ul>
+        <div className="text-red-600">
+          <h2 className="text-center text-4xl py-5">Publications</h2>
+          <ul className='p-8 text-xl flex flex-col space-y-4'>
             {books.map(book => (
               <Link key={book.id}
                   onClick={() => setSelectedBook(book)}
