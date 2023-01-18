@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import img1 from '../assets/book1.jpeg';
+import img1 from '../assets/book1.png';
 import img2 from '../assets/book2.jpeg';
 import img3 from '../assets/book3.jpeg';
 import img4 from '../assets/book4.jpeg';
@@ -182,13 +182,13 @@ function Publications() {
             <h2 className="text-4xl">{selectedBook.name}</h2>
             <p className="">Éditeur: {selectedBook.editeur}</p>
             <p className="">Date de publication: {selectedBook.datePublished}</p>
-            <p className="">Resume: {selectedBook.resume}</p>
+            <p className="px-6">Resume: {selectedBook.resume}</p>
             <a href={selectedBook.buyLink} target="_blank" rel="noreferrer" className="flex justify-center items-center px-6 py-2 shadow-lg bg-sky-900 rounded-full hover:animate-pulse">Lien d'achat du livre</a>
             
           </div>
           <div className="p-8 flex justify-center items-center">
             <img src={selectedBook.image} alt={selectedBook.name}
-              className="rounded-xl"/>
+              className="rounded-xl h-[80%]"/>
           </div>
         </div>
       ) : (
