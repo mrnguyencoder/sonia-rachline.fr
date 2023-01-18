@@ -73,13 +73,18 @@ function Publications() {
   return (
     <section className="">
       {selectedBook ? (
-        <div className="">
-          <h2 className="">{selectedBook.name}</h2>
-          <p className="">Date Published: {selectedBook.datePublished}</p>
-          <p className="">Editeur: {selectedBook.editeur}</p>
-          <p className="">Resume: {selectedBook.resume}</p>
-          <img src={selectedBook.image} alt={selectedBook.name} />
-          <a href={selectedBook.buyLink}>Buy now</a>
+        <div className="lg:flex p-8">
+          <div className="text-red-600 space-y-4 text-xl">
+            <h2 className="text-4xl">{selectedBook.name}</h2>
+            <p className="">Editeur: {selectedBook.editeur}</p>
+            <p className="">Date Published: {selectedBook.datePublished}</p>
+            <p className="">Resume: {selectedBook.resume}</p>
+            <a href={selectedBook.buyLink} target="_blank" className="flex justify-center px-8 py-2 border-2">Buy now</a>
+          </div>
+          <div className="p-8">
+            <img src={selectedBook.image} alt={selectedBook.name}
+              className="rounded-xl"/>
+          </div>
         </div>
       ) : (
         <div className="">
