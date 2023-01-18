@@ -6,7 +6,6 @@ import NavBar from './componants/NavBar';
 import { Route, Routes } from 'react-router-dom';
 import MentionsLegales from './componants/MentionsLegales';
 import Contact from './componants/Contact';
-import PublicationDetails from './componants/PublicationDetails';
 
 
 
@@ -17,7 +16,7 @@ function App() {
         <Routes>
           <Route path= "/" element={<Home />} />
           <Route path= "/publications" element={<Publications />} />
-          <Route path= "/publications/" element={<PublicationDetails />} />
+          <Route path= "/publications/:id" element={<Publications />} />
           <Route path= "/contact" element={<Contact />} />
           <Route path="/mentions-legales" element={<MentionsLegales />} />
         </Routes>
