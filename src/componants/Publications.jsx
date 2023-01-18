@@ -183,7 +183,7 @@ function Publications() {
             <p className="">Éditeur: {selectedBook.editeur}</p>
             <p className="">Date de publication: {selectedBook.datePublished}</p>
             <p className="">Resume: {selectedBook.resume}</p>
-            <a href={selectedBook.buyLink} target="_blank" rel="noreferrer" className="flex justify-center items-center px-6 py-2 shadow-lg bg-sky-900 rounded-full hover:animate-pulse">Buy now</a>
+            <a href={selectedBook.buyLink} target="_blank" rel="noreferrer" className="flex justify-center items-center px-6 py-2 shadow-lg bg-sky-900 rounded-full hover:animate-pulse">Lien d'achat du livre</a>
             
           </div>
           <div className="p-8 flex justify-center items-center">
