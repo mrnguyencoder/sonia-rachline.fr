@@ -79,7 +79,7 @@ function Publications() {
             <p className="">Editeur: {selectedBook.editeur}</p>
             <p className="">Date Published: {selectedBook.datePublished}</p>
             <p className="">Resume: {selectedBook.resume}</p>
-            <a href={selectedBook.buyLink} target="_blank" className="flex justify-center">Buy now</a>
+            <a href={selectedBook.buyLink} target="_blank" rel="noreferrer" className="flex justify-center items-center btn btn-outline btn-success">Buy now</a>
           </div>
           <div className="p-8">
             <img src={selectedBook.image} alt={selectedBook.name}
