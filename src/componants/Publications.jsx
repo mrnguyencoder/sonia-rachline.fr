@@ -164,10 +164,10 @@ const books = [
     title: `Collaborations-vingt-ans-de-systeme-de-mode`,
     name: `Vingt ans de système de mode`,
     editeur: `IFM-Regard`,
-    datePublished: `2008`,
-    resume: ``,
+    datePublished: `04/12/2008`,
+    resume: `À l'occasion de ses vingt ans, l'Institut Français de la Mode fait le point sur les évolutions d'un système de la mode riche et complexe, dont les stratégies et enjeux sont autant de modèles pour l'ensemble des industries de création. Ecrit par l'ensemble du corps professoral et des experts de l'Ifm, cet ouvrage comprend cinq chapitres principaux : la mode et la création, la marque et l'image, la distribution et la vie du point de vente, la mondialisation du secteur, et enfin, les transversalités et croisements entre mode, art, design, parfum, gastronomie ou art de vivre.`,
     image: img15,
-    buyLink: ``,
+    buyLink: `https://www.amazon.fr/Mode-Fashion-syst%C3%A8me-mode-bilingue/dp/2914863187`,
   },
 
 ]
