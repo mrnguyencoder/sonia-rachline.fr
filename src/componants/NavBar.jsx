@@ -15,7 +15,7 @@ function NavBar() {
         <Link to="/" className="">
             <img className='h-10 md:h-14 hover:scale-110' src={Logo} alt="Sonia Rachline" />
         </Link>
-        <div className="hidden md:flex items-center text-xl space-x-5 text-red-600 pr-4">
+        <div className="hidden md:flex items-center text-2xl space-x-5 text-red-600 pr-4">
             <Link to="/" className="hover:animate-pulse" >Accueil</Link>
             <Link to="/publications" className="hover:animate-pulse" >Publications</Link>
             <Link to="/contact" className="hover:animate-pulse" >Contact</Link>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { ArrowLeftCircleIcon, ArrowRightCircleIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
 import img1 from '../assets/book1.png';
@@ -234,7 +234,7 @@ function Publications() {
         </div>
       ) : (
         <div className="text-red-600">
-          <h2 className="text-center tracking-widest text-4xl py-10">Publications</h2>
+          <h2 className="text-center tracking-widest text-4xl lg:text-6xl py-10">Publications</h2>
           {Object.values(groupedBooks).map(group => (
           <div className=''>
             <h3 className='text-3xl text-center'>{group.author.name}</h3>
@@ -245,7 +245,7 @@ function Publications() {
                     <Link
                       onClick={() => setSelectedBook(book)}
                       to={`/publications/${book.title}`}
-                      className="hover:border-b flex justify-center items-center">
+                      className="hover:border-b hover:scale-105 hover:text-red-500 flex justify-center items-center">
                         {book.name}
                     </Link>
                   </li>
