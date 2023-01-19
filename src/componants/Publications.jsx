@@ -215,13 +215,15 @@ function Publications() {
     <section className="">
       {selectedBook ? (
         <div className="lg:flex p-8">
-          <div className="flex flex-col justify-center items-center text-red-600 space-y-4 text-xl max-w-4xl">
+          <div className="flex flex-col justify-center items-center text-red-600 space-y-4 text-xl max-w-3xl">
             <h2 className="text-4xl">{selectedBook.name}</h2>
             <p className="">Éditeur: {selectedBook.editeur}</p>
             <p className="">Date de publication: {selectedBook.datePublished}</p>
             <p className="px-6">Resume: {selectedBook.resume}</p>
-            <a href={selectedBook.buyLink} target="_blank" rel="noreferrer" className="flex justify-center items-center px-6 py-2 shadow-lg bg-sky-900 rounded-full hover:animate-pulse">Lien d'achat du livre</a>
-            <button onClick={() => setSelectedBook(null)} className="text-right">Go back to book list</button>
+            <div className="flex space-x-5">
+              <button onClick={() => setSelectedBook(null)} className="">Retour à la liste des livres</button>
+              <a href={selectedBook.buyLink} target="_blank" rel="noreferrer" className="flex justify-center items-center px-6 py-2 shadow-lg bg-sky-900 rounded-full hover:animate-pulse">Lien d'achat du livre</a>
+            </div>
             
           </div>
           <div className="p-8 flex justify-center items-center">
