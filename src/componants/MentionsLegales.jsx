@@ -8,12 +8,12 @@ function MentionsLegales() {
       <h2 className="text-center p-10 text-3xl">Mentions légales</h2>
 
             {/* Disclosure begin */}
-            <div className="py-4 md:py-20">
-              <div className='p-6 md:px-20 lg:px-30'>
+            <div className="py-4 md:py-20 flex justify-center">
+              <div className='p-6 md:px-20 lg:px-30 max-w-6xl'>
                 <Disclosure>
                 {({ open }) => (
                 <>
-                  <Disclosure.Button className="flex w-full justify-between rounded-t-xl bg-red-600 px-4 py-2 text-left text-sm font-medium text-gray-50 hover:bg-red-700">
+                  <Disclosure.Button className="flex w-full justify-between rounded-t-xl bg-red-800 px-4 py-2 text-left text-sm font-medium text-gray-50 hover:bg-red-700">
                     <p className='text-xl md:text-2xl lg:text-3xl'>Informations légales</p>
                     <FiPlus className={`${
                           open ? 'rotate-45 transform' : ''
@@ -32,15 +32,15 @@ function MentionsLegales() {
                 <Disclosure>
                 {({ open }) => (
                 <>
-                  <Disclosure.Button className="mt-5 flex w-full justify-between rounded-t-xl bg-red-600 px-4 py-2 text-left text-sm font-medium text-gray-50 hover:bg-red-700">
+                  <Disclosure.Button className="mt-5 flex w-full justify-between rounded-t-xl bg-red-800 px-4 py-2 text-left text-sm font-medium text-gray-50 hover:bg-red-700">
                     <p className='text-xl md:text-2xl lg:text-3xl capitalize'>L'editeur</p>
                     <FiPlus className={`${
                           open ? 'rotate-45 transform' : ''
                         } text-3xl text-gray-100`}/>
                   </Disclosure.Button>
                   <Disclosure.Panel className="p-4 text-lg md:text-xl lg:text-2xl">
-                  <p>L’édition et la direction de la publication du Site est assurée par Sonia RACHLINE, domiciliée 4, rue Lallier 75009 Paris, dont le numéro de téléphone est 0685421993,Siret : 49858433300021 APE : 741G et l'adresse e-mail srachine@orange.fr.</p>
-                  <p className="">Le site Web est codé et développé par Van Duy NGUYEN,numéro de téléphone est 0782885224 siteweb: https://nguyencoder.com/, numéro Siret : 94782606100014  </p>
+                  <p>L’édition et la direction de la publication du Site est assurée par Sonia RACHLINE, domiciliée 4, rue Lallier 75009 Paris, dont le numéro de téléphone: 0685421993, Siret : 49858433300021 APE : 741G et l'adresse e-mail: srachine@orange.fr.</p>
+                  <p className="">Le site Web est codé et développé par Van Duy NGUYEN, numéro de téléphone: 0782885224 , sociale Nguyen Dev,  numéro Siret : 94782606100014 et l'adresse e-mail: mr.nguyencoder@gmail.com  </p>
                   <p>ci-après l'"Editeur".</p>
                   </Disclosure.Panel>
                 </>
@@ -50,7 +50,7 @@ function MentionsLegales() {
                 <Disclosure>
                 {({ open }) => (
                 <>
-                  <Disclosure.Button className="mt-5 flex w-full justify-between rounded-t-xl bg-red-600 px-4 py-2 text-left text-sm font-medium text-gray-50 hover:bg-red-700">
+                  <Disclosure.Button className="mt-5 flex w-full justify-between rounded-t-xl bg-red-800 px-4 py-2 text-left text-sm font-medium text-gray-50 hover:bg-red-700">
                     <p className='text-xl md:text-2xl lg:text-3xl'>L'hebergeur</p>
                     <FiPlus className={`${
                           open ? 'rotate-45 transform' : ''
@@ -67,7 +67,7 @@ function MentionsLegales() {
                 <Disclosure>
                 {({ open }) => (
                 <>
-                  <Disclosure.Button className="mt-5 flex w-full justify-between rounded-t-xl bg-red-600 px-4 py-2 text-left text-sm font-medium text-gray-50 hover:bg-red-700">
+                  <Disclosure.Button className="mt-5 flex w-full justify-between rounded-t-xl bg-red-800 px-4 py-2 text-left text-sm font-medium text-gray-50 hover:bg-red-700">
                     <p className='text-xl md:text-2xl lg:text-3xl'>Accès au site</p>
                     <FiPlus className={`${
                           open ? 'rotate-45 transform' : ''
@@ -84,7 +84,7 @@ function MentionsLegales() {
                 <Disclosure>
                 {({ open }) => (
                 <>
-                  <Disclosure.Button className="mt-5 flex w-full justify-between rounded-t-xl bg-red-600 px-4 py-2 text-left text-sm font-medium text-gray-50 hover:bg-red-700">
+                  <Disclosure.Button className="mt-5 flex w-full justify-between rounded-t-xl bg-red-800 px-4 py-2 text-left text-sm font-medium text-gray-50 hover:bg-red-700">
                     <p className='text-xl md:text-2xl lg:text-3xl'>Collecte des données</p>
                     <FiPlus className={`${
                           open ? 'rotate-45 transform' : ''
@@ -100,7 +100,7 @@ function MentionsLegales() {
                 <Disclosure>
                 {({ open }) => (
                 <>
-                  <Disclosure.Button className="mt-5 flex w-full justify-between rounded-t-xl bg-red-600 px-4 py-2 text-left text-sm font-medium text-gray-50 hover:bg-red-700">
+                  <Disclosure.Button className="mt-5 flex w-full justify-between rounded-t-xl bg-red-800 px-4 py-2 text-left text-sm font-medium text-gray-50 hover:bg-red-700">
                     <p className='text-xl md:text-2xl lg:text-3xl'>Propriété intellectuelle</p>
                     <FiPlus className={`${
                           open ? 'rotate-45 transform' : ''
@@ -119,7 +119,7 @@ function MentionsLegales() {
                 <Disclosure>
                 {({ open }) => (
                 <>
-                  <Disclosure.Button className="mt-5 flex w-full justify-between rounded-t-xl bg-red-600 px-4 py-2 text-left text-sm font-medium text-gray-50 hover:bg-red-700">
+                  <Disclosure.Button className="mt-5 flex w-full justify-between rounded-t-xl bg-red-800 px-4 py-2 text-left text-sm font-medium text-gray-50 hover:bg-red-700">
                     <p className='text-xl md:text-2xl lg:text-3xl'>Droit applicable – Compétence juridictionnelle</p>
                     <FiPlus className={`${
                           open ? 'rotate-45 transform' : ''
