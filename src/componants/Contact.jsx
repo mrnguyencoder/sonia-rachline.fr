@@ -5,7 +5,7 @@ import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
 
 function Contact() {
   return (
-    <section className="text-red-600" >
+    <section className="text-red-600 bg-gradient-to-t-primary-blue-400 " >
       <h2 className="text-center text-3xl lg:text-6xl py-10">Contact</h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 ">
         <div className="flex flex-col justify-center items-center space-y-6 py-8">
@@ -23,7 +23,7 @@ function Contact() {
         <div className="flex justify-center items-center">
           <img src={logo} alt="sonia rachline" className='p-10 md:p-20 lg:p-30' />
         </div>
-        <form 
+        {/* <form 
             action="https://formsubmit.co/your@email.com" method="POST"
             className='flex flex-col space-y-4 px-10 pb-10 md:px-20 lg:px-60'>
            <input type="text" name="nom" placeholder='votre nom et prénom' className='px-6 py-4 outline-none rounded-lg bg-slate-200 border-b border-slate-500 hover:border-slate-900' /> 
@@ -33,7 +33,7 @@ function Contact() {
            <div className="flex justify-center">
             <button type="submit" className='bg-emerald-600 px-6 py-3 text-slate-100 text-lg rounded-full w-36 ring-2 ring-teal-400 hover:bg-emerald-700'>Envoyer</button>
             </div>
-        </form>
+        </form> */}
       </div>
 
     </section>
