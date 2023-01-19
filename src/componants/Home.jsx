@@ -25,39 +25,23 @@ function Home() {
         </div>
       </div>
       {/* Section loop marquee text */}
-      <div class="relative flex overflow-x-hidden text-red-700">
-        <div class="block py-12 animate-marquee whitespace-nowrap">
-          <span class="mx-3 text-3xl">Sonia David:</span>
-          <span class="mx-3 text-3xl">David Bowie n’est pas mort, 2017</span>
-          <span class="mx-3 text-3xl">Les petits succès sont un désastre, 2012</span>
-          <span class="mx-3 text-3xl">Ghostwriting:</span>
-          <span class="mx-3 text-3xl">Mélancolique Rodéo - Jean Michel Jarre, 2019</span>
-          <span class="mx-3 text-3xl">Melissa - Marco Palmieri, 2010</span>
-          <span class="mx-3 text-3xl">Sonia Rachline:</span>
-          <span class="mx-3 text-3xl">Claude Brouet, Journaliste de mode, 2022</span>
-          <span class="mx-3 text-3xl">Lido, Plumes stass et Emotions, 2021</span>
-          <span class="mx-3 text-3xl">Karl Lagerfeld de A à Z, 2019</span>
-          <span class="mx-3 text-3xl">C’est le Printemps la Martinière, 2015</span>
-          <span class="mx-3 text-3xl">Vogue Covers, 2015</span>
-          <span class="mx-3 text-3xl">Vogue à la Mer, 2008</span>
-          <span class="mx-3 text-3xl">Le Monde de –M-, 2005</span>
+      <div class="flex overflow-x-hidden text-red-700 w-screen">
+        <div class="py-12 animate-marquee whitespace-nowrap text-3xl">
+          <span class="mx-6">Sonia David:</span>
+          <span class="mx-6">David Bowie n’est pas mort, 2017</span>
+          <span class="mx-6">Les petits succès sont un désastre, 2012</span>
+          <span class="mx-6">Ghostwriting:</span>
+          <span class="mx-6">Mélancolique Rodéo - Jean Michel Jarre, 2019</span>
+          <span class="mx-6">Melissa - Marco Palmieri, 2010</span>
+          <span class="mx-6">Sonia Rachline:</span>
+          <span class="mx-6">Claude Brouet, Journaliste de mode, 2022</span>
+          <span class="mx-6">Lido, Plumes stass et Emotions, 2021</span>
+          <span class="mx-6">Karl Lagerfeld de A à Z, 2019</span>
+          <span class="mx-6">C’est le Printemps la Martinière, 2015</span>
+          <span class="mx-6">Vogue Covers, 2015</span>
+          <span class="mx-6">Vogue à la Mer, 2008</span>
+          <span class="mx-6">Le Monde de –M-, 2005</span>
         </div>
-        {/* <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
-          <span class="mx-3 text-3xl">Sonia David:</span>
-          <span class="mx-3 text-3xl">David Bowie n’est pas mort, 2017</span>
-          <span class="mx-3 text-3xl">Les petits succès sont un désastre, 2012</span>
-          <span class="mx-3 text-3xl">Ghostwriting:</span>
-          <span class="mx-3 text-3xl">Mélancolique Rodéo - Jean Michel Jarre, 2019</span>
-          <span class="mx-3 text-3xl">Melissa - Marco Palmieri, 2010</span>
-          <span class="mx-3 text-3xl">Sonia Rachline:</span>
-          <span class="mx-3 text-3xl">Claude Brouet, Journaliste de mode, 2022</span>
-          <span class="mx-3 text-3xl">Lido, Plumes stass et Emotions, 2021</span>
-          <span class="mx-3 text-3xl">Karl Lagerfeld de A à Z, 2019</span>
-          <span class="mx-3 text-3xl">C’est le Printemps la Martinière, 2015</span>
-          <span class="mx-3 text-3xl">Vogue Covers, 2015</span>
-          <span class="mx-3 text-3xl">Vogue à la Mer, 2008</span>
-          <span class="mx-3 text-3xl">Le Monde de –M-, 2005</span>
-        </div> */}
       </div>
     </section>
   )
