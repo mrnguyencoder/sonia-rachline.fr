@@ -9,7 +9,7 @@ import fnac from '../assets/fnac.png';
 
 function Contact() {
   return (
-    <section className="text-red-700 bg-gradient-to-t-primary-blue-400 " >
+    <section className="text-red-700 lg:h-screen" >
       <h2 className="text-center tracking-widest text-4xl lg:text-6xl py-10">Contact</h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-8">
         <div className="flex flex-col justify-center items-center space-y-8 py-6">
@@ -43,7 +43,7 @@ function Contact() {
           </div>
         </div>
         <div className="flex justify-center items-center">
-          <img src={logo} alt="sonia rachline" className='p-10 md:px-20 lg:px-30' />
+          <img src={logo} alt="sonia rachline" className='h-[70%]' />
         </div>
       </div>
 
