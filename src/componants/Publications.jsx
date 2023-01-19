@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { ArrowLeftCircleIcon, ArrowRightCircleIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
 import img1 from '../assets/book1.png';
 import img2 from '../assets/book2.jpeg';
@@ -220,9 +221,9 @@ function Publications() {
             <p className="">Éditeur: {selectedBook.editeur}</p>
             <p className="">Date de publication: {selectedBook.datePublished}</p>
             <p className="px-6">Resume: {selectedBook.resume}</p>
-            <div className="flex space-x-5">
-              <button onClick={() => setSelectedBook(null)} className="">Retour à la liste des livres</button>
-              <a href={selectedBook.buyLink} target="_blank" rel="noreferrer" className="flex justify-center items-center px-6 py-2 shadow-lg bg-sky-900 rounded-full hover:animate-pulse">Lien d'achat du livre</a>
+            <div className="md:flex space-x-5 space-y-5 justify-center items-center">
+              <button onClick={() => setSelectedBook(null)} className="flex items-center bg-sky-900 rounded-full px-6 py-2"><ArrowLeftCircleIcon className="h-10 text-slate-50"/> Retour à la liste des livres</button>
+              <a href={selectedBook.buyLink} target="_blank" rel="noreferrer" className="flex justify-center items-center px-6 py-2 shadow-lg bg-sky-900 rounded-full hover:animate-pulse">Lien d'achat du livre <ArrowRightCircleIcon className="h-10 text-yellow-300" /> </a>
             </div>
             
           </div>
