@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import img1 from '../assets/book1.png';
 import img2 from '../assets/book2.jpeg';
@@ -40,7 +40,7 @@ const books = [
   },
   {
     id: 3,
-    title: `claude-Brouet-Journaliste-de-mode`,
+    title: `Claude-Brouet-Journaliste-de-mode`,
     name: `Claude Brouet, Journaliste de mode`,
     editeur: `Regard`,
     datePublished: `22/09/2022`,
@@ -171,9 +171,45 @@ const books = [
 
 ]
 
+const authors = [
+  {
+    id: 1,
+    name: "Sonia David",
+    bookIds: [1, 2]
+  },
+  {
+    id: 2,
+    name: "Sonia Rachline",
+    bookIds: [3, 4, 5, 6, 7, 8, 9]
+  },
+  {
+    id: 3,
+    name: "Ghostwriting",
+    bookIds: [10, 11]
+  },
+  {
+    id: 4,
+    name: "Collaborations",
+    bookIds: [12, 13, 14, 15]
+  },
+]
+
 
 function Publications() {
   const [selectedBook, setSelectedBook] = useState(null);
+  const groupedBooks = books.reduce((acc, book) => {
+    const author = authors.find(author => author.bookIds.includes(book.id));
+    if (!acc[author.id]) {
+        acc[author.id] = {
+            author: author,
+            books: [book]
+        }
+    } else {
+        acc[author.id].books.push(book);
+    }
+    return acc;
+}, {});
+
   return (
     <section className="">
       {selectedBook ? (
@@ -184,6 +220,7 @@ function Publications() {
             <p className="">Date de publication: {selectedBook.datePublished}</p>
             <p className="px-6">Resume: {selectedBook.resume}</p>
             <a href={selectedBook.buyLink} target="_blank" rel="noreferrer" className="flex justify-center items-center px-6 py-2 shadow-lg bg-sky-900 rounded-full hover:animate-pulse">Lien d'achat du livre</a>
+            <button onClick={() => setSelectedBook(null)} className="text-right">Go back to book list</button>
             
           </div>
           <div className="p-8 flex justify-center items-center">
@@ -194,16 +231,25 @@ function Publications() {
       ) : (
         <div className="text-red-600">
           <h2 className="text-center text-4xl py-5">Publications</h2>
-          <ul className='p-8 text-xl flex flex-col space-y-4 justify-center items-center'>
-            {books.map(book => (
-              <Link key={book.id}
-                  onClick={() => setSelectedBook(book)}
-                  to={`/publications/${book.title}`}
-                  className="hover:border-b max-w-md">
-                {book.name}
-              </Link>
-            ))}
-          </ul>
+          {Object.values(groupedBooks).map(group => (
+          <div className=''>
+            <h3 className='text-3xl text-center'>{group.author.name}</h3>
+            <div className="flex justify-center items-center text-xl">
+              <ul className='p-8 grid md:grid-cols-2 lg:grid-cols-3 gap-4'>
+                {group.books.map(book => (
+                  <li key={book.id}>
+                    <Link
+                      onClick={() => setSelectedBook(book)}
+                      to={`/publications/${book.title}`}
+                      className="hover:border-b">
+                        {book.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          ))}
         </div>
       )};
     </section>
