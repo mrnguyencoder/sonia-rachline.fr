@@ -16,7 +16,7 @@ function Home() {
             <p className="text-xl text-slate-100 max-w-4xl pt-2">Et du travail de groupe.</p>
             <p className="text-xl text-slate-100 max-w-4xl pt-2"></p>
           </div>
-          <div className="-rotate-3 px-10 ">
+          <div className="-rotate-3 px-10">
             <h2 className="text-4xl text-red-600 hover:animate-ping">Sonia David</h2>
             <h3 className="text-2xl text-red-800">Écrivain</h3>
             <p className="text-xl text-slate-100 max-w-4xl pt-5">Deux romans. Un troisième en devenir. Une petite oeuvre au long cours.</p>
