@@ -2,7 +2,7 @@ import React from 'react';
 import Logo from '../assets/textsonia.png';
 import { Menu } from '@headlessui/react';
 import { Link } from 'react-router-dom';
-import { Bars2Icon } from '@heroicons/react/24/outline';
+import { Bars3Icon } from '@heroicons/react/24/outline';
 
 function NavBar() {
     const links = [
@@ -11,7 +11,7 @@ function NavBar() {
         { to: '/contact', label: 'Contact',},
       ]
   return (
-    <nav className='flex justify-between p-3 shadow-sm bg-slate-800 text-red-600'>
+    <nav className='flex justify-between p-3 shadow-sm bg-slate-800 text-red-700'>
         <Link to="/" className="">
             <img className='h-10 md:h-14 hover:animate-pulse' src={Logo} alt="Sonia Rachline" />
         </Link>
@@ -23,9 +23,9 @@ function NavBar() {
         {/* Menu mobile */}
         <Menu as="div" className="md:hidden text-right">
             <Menu.Button>
-                <Bars2Icon className='h-10 hover:animate-pulse'/>
+                <Bars3Icon className='h-10 hover:animate-pulse'/>
             </Menu.Button>
-            <Menu.Items className="flex flex-col text-2xl space-y-8 p-8">
+            <Menu.Items className="flex flex-col text-2xl space-y-8 pt-4 pr-3">
                 {links.map((link) => (
                 /* Use the `active` state to conditionally style the active item. */
                 <Menu.Item key={link.to}>
@@ -33,7 +33,7 @@ function NavBar() {
                     <Link
                         to={link.to}
                         className={`${
-                        active && 'rounded-xl bg-gray-700 px-4 py-2 transition ease-in-out duration-500 hover:animate-pulse'
+                        active && 'hover:text-red-600 hover:scale-105'
                         }`}
                     >         
                         {link.label}
