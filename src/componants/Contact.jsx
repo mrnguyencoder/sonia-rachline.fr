@@ -16,7 +16,7 @@ function Contact() {
           <a href="tel:33782885224"
               className="flex space-x-3 text-5xl md:text-2xl hover:scale-110">
               <PhoneIcon className="md: h-10 flex-shrink-0 text-red-600" aria-hidden="true" />
-              <span className="text-2xl lg:text-5xl ">0685421993</span>
+              <span className="text-2xl lg:text-5xl ">+33 6 85 42 19 93</span>
           </a>
           <a href="mailto:srachine@orange.fr"
               className="flex space-x-3 text-xl md:text-2xl hover:scale-110">
