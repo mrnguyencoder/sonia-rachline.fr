@@ -47,7 +47,7 @@ const books = [
     datePublished: `22/09/2022`,
     resume: `Claude Brouet a consacré sa vie à la mode. Et la mode, elle, l'a depuis longtemps consacrée " grande Dame ", voire " papesse " de la profession. son parcours l'a conduite des salons Haute-Couture où travaillait sa mère, a directrice du style d'Hermès,...`,
     image: img3 ,
-    buyLink: `https://www.amazon.fr/Claude-Brouet-Journaliste-Sonia-Rachline/dp/2841054160/ref=cm_cr_arp_d_product_top?ie=UTF8`,
+    buyLink: ``,
   },
   {
     id: 4,
