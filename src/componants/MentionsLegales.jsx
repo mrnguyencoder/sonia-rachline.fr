@@ -39,7 +39,7 @@ function MentionsLegales() {
                         } text-3xl text-gray-100`}/>
                   </Disclosure.Button>
                   <Disclosure.Panel className="p-4 text-lg md:text-xl lg:text-2xl">
-                  <p>L’édition et la direction de la publication du Site est assurée par Sonia RACHLINE, domiciliée 4, rue Lallier 75009 Paris, dont le numéro de téléphone: 0685421993, Siret : 49858433300021 APE : 741G et l'adresse e-mail: srachine@orange.fr.</p>
+                  <p>L’édition et la direction de la publication du Site est assurée par Sonia RACHLINE, domiciliée 4, rue Lallier 75009 Paris, dont le numéro de téléphone: 0685421993, Siret : 49858433300021 APE : 741G et l'adresse e-mail: srachline@orange.fr.</p>
                   <p className="">Le site Web est codé et développé par Van Duy NGUYEN, numéro de téléphone: 0782885224 , sociale Nguyen Dev,  numéro Siret : 94782606100014 et l'adresse e-mail: mr.nguyencoder@gmail.com  </p>
                   <p>ci-après l'"Editeur".</p>
                   </Disclosure.Panel>
