@@ -1,10 +1,6 @@
 import React from 'react';
 import logo from '../assets/logoSoniaRachline.png';
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
-import balelio from '../assets/babelio.png';
-import amazon from '../assets/amazonfr.png';
-import Flammarion from '../assets/flammarion.png';
-import fnac from '../assets/fnac.png';
 
 
 function Contact() {
@@ -23,24 +19,6 @@ function Contact() {
               <EnvelopeIcon className="md: h-10 flex-shrink-0 text-red-600" aria-hidden="true" />
               <span className="text-2xl lg:text-5xl">srachline@orange.fr</span>
           </a>
-          {/* <div className="grid grid-cols-2 gap-8 md:gap-20">
-            <a href="https://www.amazon.fr/Sonia-Rachline/e/B004MO9HTU%3Fref=dbs_a_mng_rwt_scns_share" className="hover:scale-110" 
-            rel='noreferrer' target="_blank">
-              <img src={amazon} alt="amazon Sonia Rachline" className='rounded-lg h-12 w-36 ' />
-            </a>
-            <a href="https://editions.flammarion.com/Auteurs/rachline-sonia" className="hover:scale-110" 
-            rel='noreferrer' target="_blank">
-              <img src={Flammarion} alt="" className='rounded-lg h-12 w-36' />
-            </a>
-            <a href="https://www.fnac.com/ia833855/Sonia-Rachline" className="hover:scale-110" 
-            rel='noreferrer' target="_blank">
-              <img src={fnac} alt="fnac Sonia Rachline" className='rounded-lg h-12 w-36' />
-            </a>
-            <a href="https://www.babelio.com/auteur/Sonia-David/208280" className="hover:scale-110" 
-            rel='noreferrer' target="_blank">
-              <img src={balelio} alt="babelio Sonia David" className='rounded-lg h-12 w-36' />
-            </a>
-          </div> */}
         </div>
         <div className="flex justify-center items-center">
           <img src={logo} alt="sonia rachline" className='h-[70%] hover:animate-pulse' />

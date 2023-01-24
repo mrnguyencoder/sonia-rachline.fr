@@ -10,11 +10,17 @@ function Footer() {
     <footer className='flex flex-col bg-slate-800 px-4'>
       <div className="flex justify-between items-center p-4">
         <Link to="/"><img src={Logo} alt="sonia rachline" className='h-10 md:h-14 lg:h-20 hover:scale-110' /></Link>
-        <div className="flex  flex-col items-center">
+        <div className="flex  flex-col items-center space-y-2">
           <Link to="mentions-legales" className='text-slate-300 hover:scale-105 text-xs md:text-lg'>Mentions Légales</Link>
-          <p className="hover:animate-pulse text-slate-400 text-xs md:text-lg">
-            ©{new Date().getFullYear()} Sonia Rachline
-          </p>
+          <div className="flex space-x-3">
+            <p className="hover:animate-pulse text-slate-400 text-xs md:text-lg">
+              ©{new Date().getFullYear()} Sonia Rachline
+            </p>
+            <a href="https://nguyendev.fr/"
+                className="text-[#61dbfb] text-xs md:text-lg"
+                rel='noreferrer' target="_blank">
+             Made by Nguyen Dev</a>
+          </div>
         </div>
         <div className="text-3xl md:text-5xl flex space-x-3">
             <a href="https://www.facebook.com/sonia.david.92" 
