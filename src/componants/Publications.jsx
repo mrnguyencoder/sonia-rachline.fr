@@ -229,7 +229,7 @@ function Publications() {
   return (
     <section className="">
       {selectedBook ? (
-        <div className="lg:flex p-8">
+        <div className="lg:flex p-8 min-h-screen">
           <div className="flex flex-col justify-center items-center text-red-600 space-y-4 text-xl max-w-3xl">
             <h2 className="text-4xl">{selectedBook.name}</h2>
             <p className="">Éditeur: {selectedBook.editeur}</p>
@@ -243,7 +243,7 @@ function Publications() {
           </div>
           <div className="p-8 flex justify-center items-center">
             <img src={selectedBook.image} alt={selectedBook.name}
-              className="rounded-xl h-[80%]"/>
+              className="rounded-xl max-h-[80%] w-full"/>
           </div>
         </div>
       ) : (
