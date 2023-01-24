@@ -23,7 +23,7 @@ function Contact() {
               <EnvelopeIcon className="md: h-10 flex-shrink-0 text-red-600" aria-hidden="true" />
               <span className="text-2xl lg:text-5xl">srachline@orange.fr</span>
           </a>
-          <div className="grid grid-cols-2 gap-8 md:gap-20">
+          {/* <div className="grid grid-cols-2 gap-8 md:gap-20">
             <a href="https://www.amazon.fr/Sonia-Rachline/e/B004MO9HTU%3Fref=dbs_a_mng_rwt_scns_share" className="hover:scale-110" 
             rel='noreferrer' target="_blank">
               <img src={amazon} alt="amazon Sonia Rachline" className='rounded-lg h-12 w-36 ' />
@@ -40,7 +40,7 @@ function Contact() {
             rel='noreferrer' target="_blank">
               <img src={balelio} alt="babelio Sonia David" className='rounded-lg h-12 w-36' />
             </a>
-          </div>
+          </div> */}
         </div>
         <div className="flex justify-center items-center">
           <img src={logo} alt="sonia rachline" className='h-[70%] hover:animate-pulse' />
