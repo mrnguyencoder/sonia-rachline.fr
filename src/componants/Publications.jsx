@@ -251,7 +251,7 @@ function Publications() {
           <h2 className="text-center tracking-widest text-4xl lg:text-6xl py-10">Publications</h2>
           {Object.values(groupedBooks).map(group => (
           <div className=''>
-            <h3 className='text-3xl text-center'>{group.author.name}</h3>
+            <h3 className='text-3xl md:text-4xl text-center'>{group.author.name}</h3>
             <div className="flex justify-center items-center text-xl">
               <ul className='p-8 space-y-2'>
                 {group.books.map(book => (
