@@ -234,8 +234,8 @@ function Publications() {
             <h2 className="text-4xl">{selectedBook.name}</h2>
             <p className="">Éditeur: {selectedBook.editeur}</p>
             <p className="">Date de publication: {selectedBook.datePublished}</p>
-            <p className="px-6 lg:text-2xl">{selectedBook.resume}</p>
-            <div className="flex space-x-5 justify-center items-center">
+            <p className="md:px-6 lg:text-2xl">{selectedBook.resume}</p>
+            <div className="md:flex md:space-x-5 space-y-6 md:space-y-0 justify-center items-center">
               <button onClick={() => setSelectedBook(null)} className="flex justify-center items-center bg-sky-900 rounded-full px-4 py-2"><ArrowLeftCircleIcon className="h-10 text-slate-50"/> Retour à la liste des livres</button>
               <a href={selectedBook.buyLink} target="_blank" rel="noreferrer" className="flex justify-center items-center px-6 py-2 bg-yellow-500 rounded-full hover:animate-pulse">Lien d'achat du livre <ArrowRightCircleIcon className="h-10 text-teal-600 animate-spin" /> </a>
             </div>
@@ -259,7 +259,7 @@ function Publications() {
                     <Link
                       onClick={() => setSelectedBook(book)}
                       to={`/publications/${book.title}`}
-                      className="hover:border-b hover:scale-105 hover:text-red-500 flex justify-center items-center">
+                      className="hover:border-b hover:scale-105 hover:text-red-500 md:flex justify-center items-center">
                         {book.name}, {book.datePublished}
                     </Link>
                   </li>
