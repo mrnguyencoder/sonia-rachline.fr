@@ -20,7 +20,7 @@ function MentionsLegales() {
                         } text-3xl text-gray-100`}/>
                   </Disclosure.Button>
                   <Disclosure.Panel className="p-4 text-lg md:text-xl lg:text-2xl">
-                  <p className="">Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l’économie numérique, dite L.C.E.N., il est porté à la connaissance des utilisateurs et visiteurs, ci-après l""Utilisateur", du site https://soniarachline.fr , ci-après le "Site", les présentes mentions légales.</p>
+                  <p className="">Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l’économie numérique, dite L.C.E.N., il est porté à la connaissance des utilisateurs et visiteurs, ci-après l'"Utilisateur", du site https://soniarachline.fr , ci-après le "Site", les présentes mentions légales.</p>
                   <p className="">La connexion et la navigation sur le Site par l’Utilisateur implique acceptation intégrale et sans réserve des présentes mentions légales.</p>
                   <p className="">Ces dernières sont accessibles sur le Site à la rubrique « Mentions légales ».</p>
                   </Disclosure.Panel>
@@ -39,7 +39,7 @@ function MentionsLegales() {
                         } text-3xl text-gray-100`}/>
                   </Disclosure.Button>
                   <Disclosure.Panel className="p-4 text-lg md:text-xl lg:text-2xl">
-                  <p>L’édition et la direction de la publication du Site est assurée par Sonia RACHLINE, domiciliée 4, rue Lallier 75009 Paris, dont le numéro de téléphone: 0685421993, Siret : 49858433300021 APE : 741G et l'adresse e-mail: srachline@orange.fr.</p>
+                  <p>L’édition et la direction de la publication du Site est assurée par Sonia RACHLINE, domiciliée 75009 Paris, dont le numéro de téléphone: 0685421993, Siret : 49858433300021 APE : 741G et l'adresse e-mail: srachline@orange.fr.</p>
                   <p className="">Le site Web est codé et développé par Van Duy NGUYEN, sociale Nguyen Dev, numéro de téléphone: 0782885224 ,  numéro Siret : 94782606100014 et l'adresse e-mail: mr.nguyencoder@gmail.com  </p>
                   <p>ci-après l'"Editeur".</p>
                   </Disclosure.Panel>

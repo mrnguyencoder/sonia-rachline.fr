@@ -7,7 +7,7 @@ import Logo from '../assets/logoSoniaRachline.png';
 
 function Footer() {
   return (
-    <footer className='flex flex-col bg-slate-800 px-4 text-gray-400'>
+    <footer className='flex flex-col bg-stone-800 px-4 text-gray-400'>
       <div className="flex justify-between items-center p-4">
         <Link to="/"><img src={Logo} alt="sonia rachline" className='h-10 md:h-14 lg:h-20 hover:scale-110' /></Link>
         <div className="flex flex-col items-center space-y-2">

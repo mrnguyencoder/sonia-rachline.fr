@@ -11,7 +11,7 @@ function NavBar() {
         { to: '/contact', label: 'Contact',},
       ]
   return (
-    <nav className='flex justify-between p-3 shadow-sm bg-slate-800 text-red-700'>
+    <nav className='flex justify-between p-3 shadow-sm bg-stone-800 text-red-700'>
         <Link to="/" className="">
             <img className='h-10 md:h-14 hover:scale-110' src={Logo} alt="Sonia Rachline" />
         </Link>
@@ -23,9 +23,9 @@ function NavBar() {
         {/* Menu mobile */}
         <Menu as="div" className="md:hidden text-right">
             <Menu.Button>
-                <Bars3Icon className='h-10 hover:animate-pulse'/>
+                <Bars3Icon className='h-10 hover:animate-pulse border-none'/>
             </Menu.Button>
-            <Menu.Items className="flex flex-col text-2xl space-y-8 pt-4 pr-3">
+            <Menu.Items className="flex flex-col text-2xl space-y-8 pt-4 pr-3 border-none">
                 {links.map((link) => (
                 /* Use the `active` state to conditionally style the active item. */
                 <Menu.Item key={link.to}>
@@ -33,7 +33,7 @@ function NavBar() {
                     <Link
                         to={link.to}
                         className={`${
-                        active && 'hover:text-red-600 hover:scale-105'
+                        active && 'hover:text-red-600 hover:scale-105 border-none'
                         }`}
                     >         
                         {link.label}
