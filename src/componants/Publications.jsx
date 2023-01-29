@@ -229,21 +229,21 @@ function Publications() {
   return (
     <section className="">
       {selectedBook ? (
-        <div className="lg:flex p-8 min-h-screen">
+        <div className="grid grid-cols-1 md:grid-cols-2 p-8 min-h-screen">
           <div className="flex flex-col justify-center items-center text-red-600 space-y-4 text-xl max-w-3xl">
             <h2 className="text-4xl">{selectedBook.name}</h2>
             <p className="">Éditeur: {selectedBook.editeur}</p>
             <p className="">Date de publication: {selectedBook.datePublished}</p>
-            <p className="md:px-6 lg:text-2xl">{selectedBook.resume}</p>
+            <p className="md:px-10">{selectedBook.resume}</p>
             <div className="md:flex md:space-x-5 space-y-6 md:space-y-0 justify-center items-center">
               <button onClick={() => setSelectedBook(null)} className="flex justify-center items-center bg-sky-900 rounded-full px-4 py-2"><ArrowLeftCircleIcon className="h-10 text-slate-50"/> Retour à la liste de livres</button>
-              <a href={selectedBook.buyLink} target="_blank" rel="noreferrer" className="flex justify-center items-center px-6 py-2 bg-yellow-500 rounded-full hover:animate-pulse">Lien d'achat du livre <ArrowRightCircleIcon className="h-10 text-teal-600 animate-spin" /> </a>
+              <a href={selectedBook.buyLink} target="_blank" rel="noreferrer" className="flex justify-center items-center px-6 py-2 bg-yellow-500 rounded-full hover:animate-pulse">Lien d'achat du livre <ArrowRightCircleIcon className="h-10 text-teal-600 hover:animate-spin" /> </a>
             </div>
             
           </div>
           <div className="p-8 flex justify-center items-center">
             <img src={selectedBook.image} alt={selectedBook.name}
-              className="rounded-xl max-h-[80%] w-full"/>
+              className="rounded-xl max-h-[80%]"/>
           </div>
         </div>
       ) : (
@@ -252,14 +252,14 @@ function Publications() {
           {Object.values(groupedBooks).map(group => (
           <div className=''>
             <h3 className='text-3xl md:text-4xl text-center'>{group.author.name}</h3>
-            <div className="flex justify-center items-center text-xl">
-              <ul className='p-8 space-y-2'>
+            <div className="text-center text-xl">
+              <ul className='p-8 space-y-3'>
                 {group.books.map(book => (
                   <li key={book.id}>
                     <Link
                       onClick={() => setSelectedBook(book)}
                       to={`/publications/${book.title}`}
-                      className="hover:border-b hover:scale-105 hover:text-red-500 md:flex justify-center items-center">
+                      className="hover:border-b hover:opacity-80 transition duration-500 ">
                         {book.name}, {book.datePublished}
                     </Link>
                   </li>

@@ -13,7 +13,7 @@ function NavBar() {
   return (
     <nav className='flex justify-between p-3 shadow-sm bg-stone-800 text-red-700'>
         <Link to="/" className="">
-            <img className='h-10 md:h-14 hover:scale-110' src={Logo} alt="Sonia Rachline" />
+            <img className='h-10 md:h-14 hover:scale-110 transition duration-700' src={Logo} alt="Sonia Rachline" />
         </Link>
         <div className="hidden md:flex items-center text-2xl space-x-5 text-red-600 pr-4">
             <Link to="/" className="hover:animate-pulse" >Accueil</Link>
