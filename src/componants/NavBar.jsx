@@ -21,11 +21,11 @@ function NavBar() {
             <Link to="/contact" className="hover:animate-pulse" >Contact</Link>
         </div>
         {/* Menu mobile */}
-        <Menu as="div" className="md:hidden text-right">
+        <Menu as="div" className="md:hidden text-right bg-transparent">
             <Menu.Button>
-                <Bars3Icon className='h-10 hover:animate-pulse border-none'/>
+                <Bars3Icon className='h-10 hover:scale-110 translate duration-300 bg-transparent'/>
             </Menu.Button>
-            <Menu.Items className="flex flex-col text-2xl space-y-8 pt-4 pr-3 border-none">
+            <Menu.Items className="flex flex-col text-2xl space-y-8 pt-4 pr-3 bg-transparent">
                 {links.map((link) => (
                 /* Use the `active` state to conditionally style the active item. */
                 <Menu.Item key={link.to}>
@@ -33,7 +33,7 @@ function NavBar() {
                     <Link
                         to={link.to}
                         className={`${
-                        active && 'hover:text-red-600 hover:scale-105 border-none'
+                        active && 'hover:text-red-600 hover:scale-105'
                         }`}
                     >         
                         {link.label}
