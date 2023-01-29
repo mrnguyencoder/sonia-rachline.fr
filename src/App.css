@@ -14,7 +14,3 @@
 body {
   font-family: 'GFS Didot', serif;
 }
-
-.headlessui-menu__item:hover {
-  background-color: transparent !important;
-}

@@ -21,14 +21,14 @@ function NavBar() {
             <Link to="/contact" className="hover:animate-pulse" >Contact</Link>
         </div>
         {/* Menu mobile */}
-        <Menu as="div" className="md:hidden text-right bg-transparent">
+        <Menu as="div" className="md:hidden text-right hover:bg-transparent">
             <Menu.Button>
-                <Bars3Icon className='h-10 hover:scale-110 translate duration-300 bg-transparent'/>
+                <Bars3Icon className='h-10 hover:scale-110 translate duration-300 hover:bg-transparent'/>
             </Menu.Button>
-            <Menu.Items className="flex flex-col text-2xl space-y-8 pt-4 pr-3 bg-transparent">
+            <Menu.Items className="flex flex-col text-2xl space-y-8 pt-4 pr-3 hover:bg-transparent">
                 {links.map((link) => (
                 /* Use the `active` state to conditionally style the active item. */
-                <Menu.Item key={link.to}>
+                <Menu.Item key={link.to} className="hover:bg-transparent">
                     {({ active }) => (
                     <Link
                         to={link.to}
