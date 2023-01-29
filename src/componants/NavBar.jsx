@@ -1,14 +1,15 @@
 import React from 'react';
 import Logo from '../assets/textsonia.png';
 import { Menu } from '@headlessui/react';
+import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { Bars3Icon } from '@heroicons/react/24/outline';
 
 function NavBar() {
     const links = [
-        { to: '/', label: 'Accueil', },
-        { to: '/publications', label: 'Publications', },
-        { to: '/contact', label: 'Contact',},
+        { href: '/', label: 'Accueil', },
+        { href: '/publications', label: 'Publications', },
+        { href: '/contact', label: 'Contact',},
       ]
   return (
     <nav className='flex justify-between p-3 shadow-sm bg-stone-800 text-red-700'>
@@ -21,21 +22,21 @@ function NavBar() {
             <Link to="/contact" className="hover:animate-pulse" >Contact</Link>
         </div>
         {/* Menu mobile */}
-        <Menu as="div" className="md:hidden text-right hover:bg-transparent">
+        <Menu as="div" className="md:hidden text-right">
             <Menu.Button>
                 <Bars3Icon className='h-10 hover:scale-110 translate duration-300 hover:bg-transparent'/>
             </Menu.Button>
             <Menu.Items className="flex flex-col text-2xl space-y-8 pt-4 pr-3 hover:bg-transparent">
                 {links.map((link) => (
                 /* Use the `active` state to conditionally style the active item. */
-                <Menu.Item key={link.to} className="hover:bg-transparent">
+                <Menu.Item key={link.href} as={Fragment}>
                     {({ active }) => (
                     <Link
-                        to={link.to}
+                        to={link.href}
                         className={`${
-                        active && 'hover:text-red-600 hover:scale-105'
+                        active ? 'hover:scale-105 transition duration-300' : ' text-red-600'
                         }`}
-                    >         
+                    >
                         {link.label}
                     </Link>
                     )}
@@ -43,6 +44,7 @@ function NavBar() {
                 ))}
             </Menu.Items>
         </Menu>
+
 
 
     </nav>
