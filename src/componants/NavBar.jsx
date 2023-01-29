@@ -34,7 +34,7 @@ function NavBar() {
                     <Link
                         to={link.href}
                         className={`${
-                        active ? 'hover:scale-105 transition duration-300' : ' text-red-600'
+                        active ? 'hover:scale-105 transition duration-300 bg-transparent hover:bg-transparent' : ' text-red-600 bg-transparent hover:bg-transparent'
                         }`}
                     >
                         {link.label}
