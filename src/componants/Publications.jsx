@@ -227,7 +227,7 @@ function Publications() {
 }, {});
 
   return (
-    <section className="">
+    <section className="bg-slate-900">
       {selectedBook ? (
         <div className="grid grid-cols-1 md:grid-cols-2 p-8 min-h-screen">
           <div className="flex flex-col justify-center items-center text-red-600 space-y-4 text-xl max-w-3xl">

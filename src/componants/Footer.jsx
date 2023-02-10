@@ -7,9 +7,9 @@ import Logo from '../assets/logoSoniaRachline.png';
 
 function Footer() {
   return (
-    <footer className='flex flex-col bg-stone-800 px-4 text-gray-400'>
+    <footer className='flex flex-col bg-slate-900 px-4 text-gray-400'>
       <div className="flex justify-between items-center p-4">
-        <Link to="/"><img src={Logo} alt="sonia rachline" className='h-10 md:h-14 lg:h-20 hover:scale-110' /></Link>
+        <Link to="/"><img src={Logo} alt="sonia rachline" className='h-10 md:h-12 lg:h-16 hover:scale-110' /></Link>
         <div className="flex flex-col items-center space-y-2">
           <Link to="mentions-legales" className='text-slate-300 hover:scale-105 text-xs md:text-lg'>Mentions Légales</Link>
           <div className="md:flex space-x-3">
@@ -23,7 +23,7 @@ function Footer() {
              </a>
           </div>
         </div>
-        <div className="text-3xl md:text-5xl flex space-x-2">
+        <div className="text-2xl md:text-3xl flex space-x-2">
             <a href="https://www.facebook.com/sonia.david.92" 
               className=""
               rel='noreferrer' target="_blank">

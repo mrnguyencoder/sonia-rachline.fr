@@ -5,7 +5,7 @@ import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
 
 function Contact() {
   return (
-    <section className="text-red-700 h-screen" >
+    <section className="text-red-700 h-screen bg-slate-900" >
       <h2 className="text-center tracking-widest text-4xl lg:text-6xl py-10">Contact</h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-8">
         <div className="flex flex-col justify-center items-center space-y-8 py-6">
