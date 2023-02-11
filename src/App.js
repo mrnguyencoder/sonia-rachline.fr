@@ -11,7 +11,7 @@ import Contact from './componants/Contact';
 
 function App() {
   return (
-    <div className='bg-slate-100'>
+    <div className='bg-black'>
         <NavBar />
         <Routes>
           <Route path= "/" element={<Home />} />
